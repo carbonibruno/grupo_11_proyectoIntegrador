@@ -4,3 +4,10 @@ https://wireframe.cc/pro/pp/c3b656b6a463797
 
 //Carrito
 https://wireframe.cc/pro/edit/464014
+
+//
+git pull para actualizar
+
+1.git add link's wiframe
+2.git commit -m "cambios en el txt"
+3.git push origin main 
