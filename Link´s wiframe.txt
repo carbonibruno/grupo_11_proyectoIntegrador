@@ -2,8 +2,8 @@
 // Home
 https://wireframe.cc/pro/pp/c3b656b6a463797
 
-//Carrito
-https://wireframe.cc/pro/edit/464014
+// Carrito
+https://wireframe.cc/pro/pp/393cf3bde464014
 
 //
 git pull para actualizar
