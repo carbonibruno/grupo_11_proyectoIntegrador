@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 
 body{
@@ -17,28 +15,35 @@ body{
     color: #666666;
 }
 
+h3{
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
 header {
     width: 100%;
-    background-color: #E7E7E7;
+    background-color: rgb(252, 252, 252);
     max-height: 10%;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;    
+    flex-direction: row; 
+    margin-top: 10px;       
+}
+
+header .logo{
+    width: 15%;       
+    margin-left: 5%;
+  }
+
+.logo img {
+    width: 100%;
+    
     
 }
 
 
-.logo img {
-    width: 150px;
-    margin-left: 15%;
-    margin-top: 5%;
-    border: 2px solid salmon;
-}
-
-header div .logo{
-  width: 30%;   
-}
 
 nav {
     display: flex;
@@ -46,8 +51,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
-    margin: auto;   
-  
+    margin: auto;
+    position: relative;     
 }
 
 header nav ul {
@@ -57,15 +62,14 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 5%;
+    margin-left: 15%;
     align-items: left;
-    border: 2px solid salmon;
+    border: 1px solid salmon;
+    
     
 }
 
 header nav ul li{
-    
-    
     margin-right: 10px;   
     margin-left: 10px;    
 }
@@ -73,61 +77,168 @@ header nav ul li{
 .iconosHeader{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row;    
+    justify-content: flex-end;
+    width: 35% ;
+    position: relative;
+    left: -40px;
     
-    justify-content: space-between;
-    width: 15% ;
+    border: 1px solid salmon;
+    
     
 }
 
-/*seachbar
-.form{    
-    background-color: #FFF;
-    border: 2px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    width:;
-}*/
+.busqueda{
+    border: 1px dotted #666666;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input {
+    border: none;
+    width: 100px ;    
+}
 
 .fa-search{
     font-size: 25px;
  }
  
 .fa-user{
-   font-size: 25px; 
+   font-size: 25px;
+   margin-left: 10px;
+
+      
 }
+
 .fa-shopping-cart{
-   font-size: 25px;    
+   font-size: 25px;
+   margin-left: 10px;    
+}
+
+.fa-bars{
+    display: none;
 }
 
 
+/*finheader*/
+
+/*banner*/
 
 .banner{
+    width: 98%;
+    height: 350px;
+  
+    margin: auto;
+    background-color: rgb(252, 252, 252);
+    
+}
+
+
+.banner img{
     width: 100%;
     height: 350px;
-    background-color: pink;
-}
+}  
+
+/* finbanner*/
+
+/*relacionados*/
 
 .relacionados{
     width: 100%;
-    height: 200px;
-    background-color: orangered;
+    background-color: rgb(252, 252, 252);
+    padding: 5px;
 }
 
-.categorias{
+.articulosRelacionados{
+    margin-top: 5px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+        
+}
+
+article{
+    text-align: center;
+    width: 22%; 
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}    
+
+
+.relacionados img{
+    width: 100% ;
+    height: 70%;
+}
+
+.descripcion {
+    width:100%;
+    text-align: center;
+    
+}
+
+.precio{
     width: 100%;
-    height: 450px;
-    background-color: palegoldenrod;
+    text-align: center;
 }
 
-.mailing{
+
+
+/*inicio colecciones*/
+
+.colecciones{
     width: 100%;
-    height: 250px;
-    background-color: grey;
+    background-color: #ECCFFE;
 }
 
-.redes{
+.coleccionesItems{
+    margin-top: 5px;
+    margin: auto;
+    width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+    
+    
+}
+
+.itemColeccion {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    position: relative;
+}
+
+
+.itemColeccion img {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+/*fin colecciones */
+
+.envios{
+    width: 100%;
+    height: 150px;
+    background-color: lightgrey;
+}
+
+.mail{
     width: 100%;
     height: 250px;
     background-color: darkgray;
@@ -140,9 +251,9 @@ footer{
 }
 
 
-@media (max-width: 361px){
+@media (max-width: 380px){
 
-
+/*header*/
     .listaMenu {
         display: none;
     }
@@ -153,7 +264,9 @@ footer{
 
     .logo img {
         width: 35vw;
-        margin-right: 20px;
+       
+
+        
     }
     
     header {
@@ -161,29 +274,72 @@ footer{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-        border: 2px solid salmon;
+        
 
     }
     nav {
-        width: 45vw;
-        align-self: flex-end;
+        display: flex;
+        width: 10%;
+        justify-content: flex-end;
         border: 2px solid salmon;
+
         margin: auto;
         padding: 5px;
-        padding-left: 55px;
+        padding-left: 5vw;
     }
-
-  
+ 
     .iconosHeader{
-        width: 25vw;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 2px solid salmon;
+        justify-content: flex-end;
+        padding-left: 45px;      
         
     }
- 
 
+    .busqueda {
+        display: none;
+    }
+
+    .fa-bars{
+        display: inline;
+    }
+/*finheader*/ 
+
+/*banner*/
+
+
+
+/*relacionados*/
+    
+    .articulosRelacionados{
+      width: 98%;
+    
+    }
+    article{
+      width: 98%;  
+    }
+
+/*colecciones*/    
+    
+    .coleccionesItems{
+        width: 98%;
+    }
+
+    .itemColeccion{
+        width: 98%;
+        margin: auto;
+    }
 
 }
 
+/*tablet*/
+
+@media (max-width: 780px){
+
+    nav{
+        width: 80%;
+    }
+
+}    
