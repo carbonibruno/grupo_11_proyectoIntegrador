@@ -1,0 +1,24 @@
+div {
+    font-family: Arial;
+    font-size: 8px;
+    font-weight: bold;
+   text-align:center;
+   }
+
+footer {
+    background-color: blue;
+}
+
+.tienda {
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .nostros {
+    display:flex;
+    justify-content: space-around;
+  }
+  .redes{
+    display:flex;
+    justify-content: space-around;
+  }
