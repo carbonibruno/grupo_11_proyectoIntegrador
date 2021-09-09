@@ -449,14 +449,17 @@ footer{
 }*/
 
 .producto{
-    background-color: #ECCFFE;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
 }
 
 .productoVenta{
-    width: 38%; 
-    padding: 20px 0px 20px 60px;  
+    width: 42%; 
+    /* height: none; */
+    padding: 20px 0px 20px 60px; 
+    margin: 20px; 
 }
 .anilloProducto{
     width: 100%;
@@ -467,13 +470,15 @@ footer{
     /* color: black; */
 /* } */
 .productoDescripcion{
-width: 60%;
+width: 40%;
 padding: 20px 30px 20px 10px;
 text-align: left;
-font-size: 20px;
+font-size: 25px;
+margin: 30px;
+position: relative;
+background-color: none;
 }
-.descripcionParrafo{
- 
+.descripcionParrafo{ 
   
   padding: 10px 5px 10px ;
   max-height: fit-content;
@@ -494,7 +499,7 @@ iconoTalle{
     border-radius: 12%;
     background-color: rgb(82, 79, 79);
     border-color: gray;
-    color: blanchedalmond;
+    color: rgb(253, 253, 253);
     padding: 2px;
     border-width: 1px;
     border-style: solid;
@@ -507,12 +512,13 @@ iconoTalle{
 }
 
 .comprarAhora{
-    color: blanchedalmond;
-    text-align: center;
-    background-color: black;
+    color: whitesmoke;
+    text-align: left;
+    background-color: rgb(32, 30, 30);
     display: block;
     max-width:fit-content;
-    margin-left: 42%;
+    margin-left: 5px;
+    border-radius: 5px;
     /* font-size: px; */
 
 }
@@ -525,7 +531,14 @@ iconoTalle{
     text-align: left;
     font-size: 14px;
 }
-
+.fa-share-alt{
+    font-size: 40px;
+    text-align: right;
+}
+.iconoCompartir{
+    margin-top: 50px;
+    margin-right: 40px;
+}
 /* ACA VA EL FOOTER */
 
 
