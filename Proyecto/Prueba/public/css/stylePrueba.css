@@ -18,13 +18,16 @@ body{
 h3{
     text-align: center;
     padding-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     
 }
+/*header*/
 
 header {
     width: 100%;
     background-color: rgb(252, 252, 252);
-    max-height: 10%;
+    /*max-height: 10%;*/
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -40,9 +43,7 @@ header .logo{
 .logo img {
     width: 100%;
     
-    
 }
-
 
 
 nav {
@@ -52,7 +53,8 @@ nav {
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    position: relative;     
+    position: relative;
+    border: 1px solid salmon;     
 }
 
 header nav ul {
@@ -62,7 +64,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 15%;
+    margin-left: 5%;
     align-items: left;
     border: 1px solid salmon;
     
@@ -78,35 +80,50 @@ header nav ul li{
     flex-wrap: wrap;
     flex-direction: row;    
     justify-content: flex-end;
-    width: 35% ;
+    width: 40% ;
     position: relative;
-    left: -40px;
-    
-    border: 1px solid salmon;
-    
-    
+    right: 5%;
+   
 }
 
 .busqueda{
-    border: 1px dotted #666666;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 70%;
+
+}
+.formularioSearch{
+    border: 1px solid salmon;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
 }
 
-input {
-    border: none;
-    width: 100px ;    
-}
+/*
+.busqueda{
+    border: 2px dotted #F8E6E3;
+    width: 50%;
+    border: 1px solid salmon;
+    
+}*/
+/*
+#busqueda {
+    width: 80% ;
+    height: 25px;
+    font-family: manrope;    
+}*/
 
 .fa-search{
-    font-size: 25px;
+    font-size: 20px;
+    width: 20%;
+    border: 1px solid salmon;
  }
  
 .fa-user{
    font-size: 25px;
    margin-left: 10px;
-
       
 }
 
@@ -228,8 +245,12 @@ article{
 
 /*iconos envios tarjet*/
 
-.envios{
-    width: 99%;
+.envios {
+    background-color: #F8E6E3;
+}
+
+.containerEnvios{
+    width: 95%;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -239,14 +260,12 @@ article{
     flex-direction: row;
     line-height: 18px;
     padding: 20px;
+    border: 1px solid salmon;
 
 }
 
-
-
 h5, .envios{
-    font-size: 16px;
-   
+    font-size: 16px;   
     
 }
 p, .envios{
@@ -257,27 +276,19 @@ p, .envios{
     font-size: 26px;
     width: 5%;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 1%;
         
 }
 
-.fa-truck{
-    margin-left: 30px;
-}
-.fa-exchange-alt{
-    margin-left: 50px;
-}
 
-.fa-credit-card{
-    margin-left: 20px;
-}
 
 #truck{
    width: 25%;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-   margin-left: 5px; 
+   margin-left: 0px;
+    
 }
 
 #cambios{
@@ -290,7 +301,6 @@ p, .envios{
 
 #credit {  
   width: 25%; 
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -329,7 +339,7 @@ p, .mail{
     margin-top: 10px;
 }
 
-form, .formularioMail {
+.formularioMail {
     text-align: center;
     margin-top: 15px;
 }
@@ -341,10 +351,11 @@ form, .formularioMail {
     font-family: manrope;
     padding: 5px;
     text-align: center;
+    border: 1px dotted grey;
 }
 
 button{
-    width: 10%;
+    width: 15%;
     margin-top: 15px;
     font-family: manrope;
     padding: 10px;
@@ -457,27 +468,41 @@ footer{
 
 /*iconos envios*/
 
-.envios{ 
+.containerEnvios{ 
     flex-direction: column;
 }
 
 
 #truck{
     width: 90%;
+    border: 1px solid salmon;
     
  }
 
  #cambios{
     width: 90%; 
+    border: 1px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 5px;  
+
   }
   
   #credit {  
     width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 5px;  
     
   }
   
   .fa-truck, .fa-exchange-alt, .fa-credit-card{
-    margin-top: 5px;    
+    margin-top: 3%; 
+    border: 1px solid salmon;
+    margin-left: 5px;
+
 }
 
 /*iconos envios*/
