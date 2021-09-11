@@ -64,27 +64,33 @@
         
     </header>
 
-    <section class="login_container">
+    <section class="login">
+       
+    <div class="login_container">
+
         <div class="usuario_existente">
           
           <div class="cuestionario">
+           
+           <div class="tituloCuestionario"> 
+            <i class="fas fa-user userCuestionario"></i>
+            <h3 id="h3Cuestionario">Ya tengo una cuenta!.</h3>
+           </div> 
 
-            <i class="fas fa-user"></i>
-            <h3>Ya tengo una cuenta</h3>
-            <p>Ingresa tu mail y contraseña</p>
-          
-           <form action="#" method="post">
+           <p>Ingresa tu mail y contraseña:</p> <br>
+
+           <form id="formularioUsuarioExistente" action="#" method="post">
+
                <label for="email">Correo Electronico:</label><br>
                <input type="email" name="email" id="email" placeholder="Ej.:nombre@mail.com">
                <br>   
 
-               <label for="password">Ingrese su contraseña</label><br>
+               <label for="password">Ingrese su contraseña:</label><br>
                <input type="password" name="email" id="email"placeholder="Ingrese su contraseña">
                <br>
                <br>
-               <br>
 
-               <button type="submit" >CONTINUAR</button>
+               <button type="submit" id="botonCuestionario">CONTINUAR</button>
            </form>
 
           </div>
@@ -115,8 +121,8 @@
             </div>
 
         </div>
-       
-     </section>
+    </div>  
+    </section>
     
 </body>
 </html>
