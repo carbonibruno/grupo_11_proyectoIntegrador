@@ -1,4 +1,11 @@
 
+/*--byzantium: #7a3b69ff;
+--eggplant: #563440ff;
+--misty-rose: #f8e6e3ff;
+--turquoise-green: #91c7b1ff;
+--dodger-blue: #1098f7ff;
+6D98BA
+82A7A6*/
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ body{
     font-weight: 400;
     line-height: 1.4;
     font-size: 18px;
-    color: #666666;
+    color:#563440ff ;
     background-color: #F8E6E3;
 }
 
@@ -21,6 +28,7 @@ h3{
     padding-top: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-weight: normal;
     
 }
 /*header*/
@@ -156,9 +164,11 @@ header nav ul li{
 /*relacionados*/
 
 .relacionados{
+    margin-top: 1%;
     width: 100%;
-    background-color: rgb(252, 252, 252);
+    background-color: #f6caff;
     padding: 5px;
+    
 }
 
 .articulosRelacionados{
@@ -204,11 +214,17 @@ article{
 
 .colecciones{
     width: 100%;
-    background-color: #ECCFFE;
+    background-color: #fff6f5;
+    border-radius: 5%;
+    margin-top: 15px;
+    
 }
 
+#tituloColecciones{
+    margin-top: 10px;
+}
 .coleccionesItems{
-    margin-top: 5px;
+    margin-top: ;
     margin: auto;
     width: 90%; 
     display: flex;
@@ -314,13 +330,16 @@ p, .envios{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    border-radius: 40%;
+    padding: 5% ;
     
 }
 
 .fa-envelope{
-    margin-top: 35px;
+    margin-top: 15px;
     text-align: center;
     font-size: 100px;
+    color: #91c7b1ff;
 }
 
 #cursiva {
@@ -351,9 +370,10 @@ p, .mail{
 
 button{
     width: 15%;
-    margin-top: 15px;
+    margin-top: 20px;
     font-family: manrope;
     padding: 10px;
+    background-color: #91c7b1ff;
 }
 
 
