@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylePrueba.css">
+    <title>New user</title>
+</head>
+<body>
+
+    <header class="mainHeader">
+       
+        <div class="logo">
+            <img src="img/Fashion_Logo.png" alt="">
+        </div>
+        
+        <nav>
+
+          <div class="listaMenu">
+                <ul>
+                    <li>New In</li>
+                    <li>Colecciones</li>
+                    <li>Lifestyle</li>
+                    <li>Sale</li>
+                </ul>
+          </div>
+
+          
+          <div class="iconosHeader">
+
+            <div class="areaBusqueda">
+                <div class="formularioSearch">
+                    <form action="#" method="post">
+                          <label for="busqueda" ></label>
+                          <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+                </div>   
+                
+                <div class="submit"><i class="fa fa-search"></i></div>                
+            </div>
+ 
+            <div class="accesoUsuario">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="accesoCarrito">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+
+            <div class="menuHamburgesa">
+                <i class="fas fa-bars"></i>
+            </div>
+
+          </div>  
+
+        </nav>
+        
+    </header>
+
+    <main>
+      
+        <section class="loginNuevoUsuario">
+       
+          <div class="loginNuevoUsuario_container">
+        
+            <div class="nuevaCuenta_contenido">
+                  
+              <div class="tituloNuevaCuenta"> 
+              <i class="fas fa-magic"></i>
+              <h3 id="h3CrearCuenta">Crear Cuenta</h3>
+              </div> 
+              
+              <div class="cuestionarioNuevaCuenta">
+                
+                <form id="formDatosPersonales" action="#" method="post"></form>
+                   
+                    <div class="datosPersonalesCuestionario">
+                    
+                      <p><strong>Ingrese sus datos personales:</strong></p><br> 
+      
+                        <label for="nombre">Nombre: *</label><br>
+                        <input type="text" name="text" id="nombre" placeholder="Ej.: Juan" required>
+                        <br>
+                        <label for="apellido">Apellido: *</label><br>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ej.: Gomez" required>
+                        <br>
+                        <label for="dni">Dni: </label><br>
+                        <input type="text" name="dni" id="apellido" placeholder="31925981">
+                  
+                    </div>
+             
+                    <div class="informacionPassword">
+
+                      <p><strong>Informacion de inicio de sesion:</strong></p><br>
+
+                      <label for="email">Email: *</label><br>
+                        <input type="email" name="email" id="emailcuenta" placeholder="Ej.: Juan@mail.com" required>
+                        <br>
+                        <label for="password">Password: *</label><br>
+                        <input type="password" name="password" id="passwordcuenta" placeholder="Ingrese password" required>
+                        <br>
+                        <label for="password">Confirmacion Password: *</label><br>
+                        <input type="password" name="password" id="passwordcuenta" placeholder="Confirme su password">
+                    </div>
+                  
+                    <button type="submit" id="botonNuevaCuenta">CREAR CUENTA</button>
+              
+                </form>
+
+              </div>
+       </section>     
+       <section class="envios">
+           
+                <div class="containerEnvios">
+                  <i class="fas fa-truck"></i>
+                 <div id="truck"> 
+                  <h5>Envios a todo el pais</h5><br>               
+                  <p>Retirá en tienda sin cargo o elegí envío a domicilio gratis a partir de $1.199.</p>
+                 </div>
+      
+                 
+                  <i class="fas fa-exchange-alt"></i>
+                 <div id="cambios"> 
+                  <h5>Cambios y devoluciones</h5><br>                
+                  <p>Realizá cambios sin cargo por un año.</p>
+                 </div>
+      
+                 
+                  <i class="fas fa-credit-card"></i>
+                 <div id="credit">
+                  <h5>Multiples medios de pago</h5><br>                
+                  <p>Pagá con Visa, Amex y Master en 3 y 6 cuotas sin interés.</p>
+                 </div>
+      
+              </div> 
+                
+              
+              </section>
+
+
+    </main>  
+    <footer>
+
+    </footer>
+</body>
+</html>
