@@ -6,7 +6,8 @@
 --dodger-blue: #1098f7ff;
 6D98BA
 82A7A6*/
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -138,8 +139,7 @@ header nav ul li{
     display: none;
     font-size: 25px;
     margin-left: 20px;
-
-     
+   
 }
 
 
@@ -179,8 +179,7 @@ header nav ul li{
     margin: auto;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
     justify-content: center;
         
 }
@@ -227,7 +226,7 @@ article{
     margin-top: 10px;
 }
 .coleccionesItems{
-    margin-top: ;
+
     margin: auto;
     width: 90%; 
     display: flex;
@@ -268,7 +267,7 @@ article{
     width: 95%;
     margin: auto;
     margin-top: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     background-color: #F8E6E3;
     display: flex;
     flex-wrap: wrap;
@@ -276,7 +275,6 @@ article{
     line-height: 18px;
     padding: 20px;
     
-
 }
 
 h5, .envios{
@@ -505,7 +503,7 @@ footer{
     margin-left: 25%;
     text-align: center;
     padding: 5px;
-    margin-top: ;
+   
 }
 
 #botonCrearCuenta {
@@ -611,6 +609,59 @@ footer{
 }
 
 /*nuevo usuario*/
+
+/*inicio footer*/
+
+footer{
+    background-color: rgb(122, 120, 120);
+}
+
+.footerContainer{
+    width: 95%;
+    margin: auto;
+    background-color: rgb(122, 120, 120);
+    color: #F8E6E3;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+
+
+.footerSecciones{
+    width:30%;
+    margin-top: 2%; 
+    margin-left: 8%;
+}
+
+.footerColecciones{
+    width: 30%; 
+    margin-top: 2%;
+    margin-left: 1%;
+    
+}
+
+.footerLogosRedes{
+    width: 20%;
+    margin-top: 2%;
+    
+}
+
+.footerListas {
+    list-style: none;
+}
+
+.fa-facebook-square{
+    font-size: 55px;
+}
+
+.fa-instagram{
+    font-size: 55px;
+   
+}
 
 /*media tablet*/
 
@@ -946,7 +997,47 @@ header .logo{
    width: 100%;
 }
 /*fin nueva cuenta*/
+
+/*footerCelular*/
+
+.footerContainer{
+   flex-direction: column;
+   width: 100%;
+}
+
+
+.footerSecciones{
+    width:30%;
+    margin-left: 2%;
+}
+
+.footerColecciones{
+    width: 30%; 
+    margin-top: 4%;
+    margin-left: 2%;
     
+}
+
+.footerLogosRedes{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    
+}
+
+.footerListas {
+    list-style: none;
+}
+
+.fa-facebook-square{
+    font-size: 55px;
+}
+
+.fa-instagram{
+    font-size: 55px;
+   
+}
+
 }
 
 
@@ -1009,7 +1100,8 @@ background-color: none;
   max-height: fit-content;
   font-size: 14px;
 }
-iconoTalle{
+
+.iconoTalle{
     list-style-type: none;  
     text-align: left;
     display: flex;
