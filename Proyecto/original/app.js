@@ -2,8 +2,14 @@ const express = require ("express");
 const app = express ();
 const path = require ("path");
 
+
+app.set("view engine", "ejs");
+
 const publicPath = path.resolve(__dirname, "./public");
 app.use (express.static(publicPath));
+
+
+
 
 app.listen(4000, () => {
     console.log("App listening on port http://localhost:4000/");
