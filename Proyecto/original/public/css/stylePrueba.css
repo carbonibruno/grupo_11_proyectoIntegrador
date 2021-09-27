@@ -65,9 +65,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 75%;
-    margin: auto;
-   
-     
+    margin: auto;     
 }
 
 header nav ul {
@@ -79,7 +77,6 @@ header nav ul {
     flex-direction: row;
     margin-left: 5%;
     align-items: left;
-   
     
 }
 
@@ -142,10 +139,9 @@ header nav ul li{
    
 }
 
-
 /*finheader*/
 
-/*banner*/
+/*banner index*/
 
 .banner{
     width: 98%;
@@ -164,7 +160,7 @@ header nav ul li{
 
 /* finbanner*/
 
-/*relacionados*/
+/*articulos relacionados*/
 
 .relacionados{
     margin-top: 1%;
@@ -208,11 +204,12 @@ article{
 .precio{
     width: 100%;
     text-align: center;
+    margin-top: 0px;
 }
 
+/*fin articulos relacionados*/
 
-
-/*inicio colecciones*/
+/*inicio colecciones index*/
 
 .colecciones{
     width: 100%;
@@ -251,12 +248,9 @@ article{
     
 }
 
+/*fin colecciones index*/
 
-
-
-/*fin colecciones */
-
-/*iconos envios tarjet*/
+/*iconos envios tarjeta*/
 
 .envios {
     background-color: #F8E6E3;
@@ -292,7 +286,6 @@ p, .envios{
     margin-left: 1%;
         
 }
-
 
 
 #truck{
@@ -383,16 +376,11 @@ button{
     background-color: #91c7b1ff;
 }
 
-/*mailing*/
-
-footer{
-    width: 100%;
-    height: 250px;
-    background-color: darkmagenta;
-}
+/*fin mailing index*/
 
 
-/*accesoUsuario*/
+
+/*accesoUsuario login*/
 
 .login{
     background-color: white;
@@ -519,7 +507,9 @@ footer{
     font-size: 16px;
 
 }
-/*fin acceso usuario*/
+/*fin acceso usuario login*/
+
+/*inicio nuevo usuario login */
 
 .loginNuevoUsuario{
     background-color: white;
@@ -608,7 +598,100 @@ footer{
     margin-left: 30%;
 }
 
-/*nuevo usuario*/
+/*fin nuevo usuario*/
+/*inicio crear producto */
+
+.crearProducto{
+    background-color: white;
+}
+
+.crearProducto_container{
+    width: 80%;
+    background-color: #F8E6E3;
+    display: flex;
+    flex-wrap: wrap;
+    flex: row;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.crearProducto_contenido{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3%;
+     
+}
+
+.tituloNuevaCuenta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;  
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  
+}
+
+.fa-magic{
+    font-size: 40px;
+    text-align: left;
+    width: 5%;
+    margin-left: 0px;
+    margin-top: 1%;
+    color: #91c7b1ff;
+  
+}
+
+#h3CrearProducto {
+    width: 70%;
+    margin-left: 5%;
+    font-size: 22px;    
+    text-align: left;
+    margin-top: 1%;
+}
+
+.cuestionarioCrearProducto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+
+.datosProductos{
+    width: 45%;
+    
+}
+
+.datosProductos2{
+    width: 45%;
+}
+
+#name, #price, #id, #descripcion, #passwordcuenta{
+    width: 80%;
+}
+
+.seleccionTalle{
+    margin-top: 0px;
+}
+
+#botonNuevaCuenta{
+    width: 40%;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+
 
 /*inicio footer*/
 
@@ -663,7 +746,9 @@ footer{
    
 }
 
-/*media tablet*/
+/*fin footer*/
+
+/*-------------media tablet----------*/
 
 @media (max-width: 780px) {
   
@@ -748,21 +833,16 @@ header .logo{
     flex-direction: column;
 }
 
-
 #truck{
-    width: 90%;
-   
-    
+    width: 90%;    
  }
 
  #cambios{
     width: 90%; 
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 5px;  
-
 }
   
   #credit {  
@@ -878,7 +958,9 @@ header .logo{
 
 
 }
-/*media celular*/
+
+
+/*--------media celular-------*/
 
 @media (max-width: 380px){
 

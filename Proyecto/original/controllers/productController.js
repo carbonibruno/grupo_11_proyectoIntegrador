@@ -11,6 +11,10 @@ const productController = {
 
     carrito: (req,res) => {
     res.render("carrito")
+    },
+
+    crear: (req,res) => {
+    res.render('crearProducto');    
     }
 
      

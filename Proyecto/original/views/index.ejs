@@ -20,7 +20,7 @@
     <header class="mainHeader">
        
         <div class="logo">
-            <a href="/home.html"><img src="img/Fashion_Logo.png" alt=""></a>
+            <a href="http://localhost:4000/"><img src="img/Fashion_Logo.png" alt=""></a>
         </div>
         
         <nav>
@@ -48,7 +48,7 @@
             </div>
  
             <div class="accesoUsuario">
-                <i class="fas fa-user"></i>
+                <a href="usuarios/acceso"><i class="fas fa-user"></i></a>
             </div>
 
             <div class="accesoCarrito">
@@ -71,39 +71,25 @@
 
     <main>
 
-        <section class="relacionados">
+      <section class="relacionados">
 
             <h3>Nuestros favoritos</h3>
-        
-         <div class="articulosRelacionados">
 
+        <div class="articulosRelacionados">
+
+          <% productosFavoritos.forEach(productosFavoritos => { %>
+          
           <article class="articulo1">
-            <img src="img/aros_relacionados.JPG" alt="">
-            <h4 class="descripcion">Aros de plata</h4>
-            <p class="precio">$14000</p>  
+            <img src="/img/<%= productosFavoritos.image %>" alt="">
+            <h4 class="descripcion"><%= productosFavoritos.name %> </h4>
+            <p class="precio">$ <%= productosFavoritos.price %> </p>  
           </article>  
+        
+           <% }) %> 
 
-          <article class="articulo2">
-            <img src="img/anillo_relacionado.JPG" alt="">
-            <h4 class="descripcion">Anillo del Poder</h4>
-            <p class="precio">$48000</p>  
-          </article>
+        </div>
 
-          <article class="articulo2">
-            <img src="img/aros2_relacionados.JPG" alt="">
-            <h4 class="descripcion">Aros combinados</h4>
-            <p class="precio">$14000</p>  
-          </article>
-
-          <article class="articulo2">
-            <img src="img/collares_relacionados.JPG" alt="">
-            <h4 class="descripcion">Collar Decadron</h4>
-            <p class="precio">$14000</p>  
-          </article>
-         
-         </div>
-
-        </section>
+      </section>
 
        <section class="colecciones">
         <br>
@@ -181,39 +167,9 @@
            
 
     </main>
-
-    <footer>
-        <div class="footerContainer">
-          
-            <div class="footerSecciones">
-                <h4>Secciones</h4> <br>
-                <ul class="footerListas">
-                     <li>New In</li>
-                     <li>Colecciones</li>
-                     <li>Lifestyle</li>
-                     <li>Sale</li>
-                </ul>
-            </div>    
-
-            <div class="footerColecciones">
-                <h4>Colecciones</h4> <br>
-                 <ul class="footerListas">
-                     <li>Pulseras</li>
-                     <li>Anillos</li>
-                     <li>Cadenas</li>
-                     <li>Aros</li>
-                 </ul>
-            </div>
-            <div class="footerLogosRedes">
-                <h4>Seguinos</h4> <br>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-            </div> 
-              
-        </div>
-
-        </div>
-    </footer>
+    
+    <%- include('partials/footer') %>  
+   
 
     
 </body>
