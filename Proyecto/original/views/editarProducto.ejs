@@ -5,28 +5,29 @@
 
 <body>
     
+    <!-- header -->
     <%- include('partials/header') %>
     
     <main>
       
-        <section class="crearProducto">
+        <section class="editarProducto">
        
-          <div class="crearProducto_container">
+          <div class="editarProducto_container">
         
-            <div class="crearProducto_contenido">
+            <div class="editarProducto_contenido">
                   
               <div class="tituloNuevaCuenta"> 
               <i class="fas fa-magic"></i>
-              <h3 id="h3CrearProducto">Crear Producto:</h3>
+              <h3 id="h3CrearProducto">Estas editando: <%= productToEdit.name %> </h3>
               </div> 
               
-              <div class="cuestionarioCrearProducto">
+              <div class="cuestionarioEditarProducto">
                 
-                <form id="formDatosPersonales" action="#" method="POST">
+                <form id="formDatosPersonales" action="/products/edit/<%= productToEdit.id %>?_method=PUT" method="POST">
                    
-                    <div class="datosProductos">
+                    <div class="datosEditarProductos">
                     
-                      <p><strong>Ingrese sus datos personales:</strong></p><br> 
+                      <p><strong>Ingrese datos del producto</strong></p><br> 
       
                         <label for="nombre">Nombre: </label><br>
                         <input type="text" name="name" id="name" placeholder="Aros de oro" required>
@@ -34,7 +35,7 @@
                         <label for="apellido">Precio:</label><br>
                         <input type="text" name="price" id="price" placeholder="3000" required>
                         <br>
-                        <label for="dni">ID</label><br>
+                        <label for="dni">ID</label><br><!-- aca va Categoría -->
                         <input type="text" name="id" id="id" placeholder="31925981">
                   
                     </div>
@@ -47,7 +48,7 @@
                       <input type="textarea" name="descripcion" id="descripcion" placeholder="Descripcion del Producto" required>
                       <br>
 
-                      <p>Perfil del comprador:</p> <br>
+                      <p>Seleccione Talle:</p> <br>
                       
                       <div class="seleccionTalle">
                       <label for="talle">S</label>
@@ -65,7 +66,7 @@
                       <input type="file" name="fotoProducto" id="fotoProducto" placeholder="Seleccione Foto">
                     </div>
                   
-                    <button type="submit" id="botonNuevaCuenta">CREAR PRODUCTO</button>
+                    <button type="submit" id="botonNuevaCuenta">EDITAR PRODUCTO</button>
               
                 </form>
 

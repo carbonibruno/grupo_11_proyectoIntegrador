@@ -1,0 +1,11 @@
+
+
+pagina productos
+
+
+Mariano
+
+- cambiar formulario id por seleccionar categoria
+- ver que coincidan name del formulario con req body
+- ver hipervinculos home
+

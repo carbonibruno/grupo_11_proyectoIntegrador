@@ -691,7 +691,69 @@ button{
     margin-left: 30%;
 }
 
+/*inicio editar formulario*/
 
+
+.editarProducto{
+    background-color: white;
+}
+
+.editarProducto_container{
+    width: 80%;
+    background-color: #F8E6E3;
+    display: flex;
+    flex-wrap: wrap;
+    flex: row;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.editarProducto_contenido{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3%;
+     
+}
+
+.cuestionarioEditarProducto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.datosEditarProductos{
+    width: 45%;
+    
+}
+
+.datosProductos2{
+    width: 45%;
+}
+
+#name, #price, #id, #descripcion, #passwordcuenta{
+    width: 80%;
+}
+
+.seleccionTalle{
+    margin-top: 0px;
+}
+
+#botonNuevaCuenta{
+    width: 40%;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+/*fin editar formulario*/
 
 /*inicio footer*/
 
