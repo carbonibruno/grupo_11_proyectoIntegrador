@@ -16,14 +16,15 @@ adaptable
 
 - unificar CSS Y diseño general de la web
 
--chequear si funciona creacion y edicion de productos
+-chequear si funciona creacion y edicion de productos (ver req bodys)
 
 
 Agenda personal:
 
 Mariano 
 
-- cambiar formulario id por seleccionar categoria
-- ver que coincidan name del formulario con req body
+- cambiar formulario id por seleccionar categoria OK
 - ver hipervinculos home
+- ver que coincidan name del formulario con req body
+
 

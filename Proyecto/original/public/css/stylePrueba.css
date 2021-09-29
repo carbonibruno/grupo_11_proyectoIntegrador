@@ -33,10 +33,11 @@ h3{
     
 }
 
-a  {
-   text-decoration: none;
-   color: none,    
-   
+a {
+   text-decoration: none;  
+   color: inherit;  
+   display: inline-block;
+
 }
 
 /*header*/
@@ -235,8 +236,11 @@ article{
     flex-wrap: wrap;
     flex-direction: row;
     padding: 5px;
-    
-    
+       
+}
+
+.coleccionesItems a {
+    width: 100%;
 }
 
 .itemColeccion {

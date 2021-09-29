@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { update } = require('../../../../../Programacion/Full/Clase 21_Get/material-revisado/src/controllers/productsController');
+/*const { update } = require('../../../../../Programacion/Full/Clase 21_Get/material-revisado/src/controllers/productsController');*/
 
 const productsFilePath = path.join(__dirname, '../data/baseDeDatosProductos.json');
 const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -9,7 +9,7 @@ const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productController = {
     
     indexProductos: (req,res) => {
-        res.send("Aca van todos los productos")
+        res.render("listadoGeneralProducto")
     }, 
 
     detalle: (req,res) => {
@@ -80,7 +80,7 @@ const productController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
 
-        res.redirect("index");/*aca tiene que volver a pagina productos*/   
+        res.redirect("listadoGeneralProducto"); 
     }
 
      
