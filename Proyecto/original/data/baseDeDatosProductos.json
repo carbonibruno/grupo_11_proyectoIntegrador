@@ -42,106 +42,105 @@
         "price": 9000,
         "discount": 0,
         "image": "collar_circulos.JPG",
-        "category": "favoritos"
-       },
-       {
-           "id": 6,
+        "category": "general"
+    },
+    {
+         "id": 6,
            "name": "Aros Rose",
            "description": "Aros Rose Ojo con cubics ",
            "price": 12000,
            "discount": 0,
            "image": "arosRoseOjos.JPG",
-           "category": "favoritos"
-          }
-          ,
-       {
+           "category": "general"
+     },
+     {
            "id": 7,
            "name": "Gargantilla",
            "description": "Gargantilla con cubics y cuernos ",
            "price": 10000,
            "discount": 0,
            "image": "Gargantilla.JPG",
-           "category": "favoritos"
-          },
-          {
+           "category": "general"
+     },
+     {
               "id": 8,
               "name": "Pulsera Bolas",
               "description": "Pulsera Bolas con dije Cruz",
               "price": 9000,
               "discount": 0,
               "image": "PulseraBolas.JPG",
-              "category": "favoritos"
-         },
-         {
+              "category": "general"
+     },
+     {
                  "id": 9,
                  "name": "Gargantilla Bolas",
                  "description": "Gargantilla con Bolas y Tubos",
                  "price": 6000,
                  "discount": 0,
                  "image": "gargantillaBolas.jpg",
-                 "category": "favoritos"
-            },
-            {
+                 "category": "general"
+     },
+     {
                     "id": 10,
                     "name": "Aros Argolla",
                     "description": "Aros Argolla Rose, Amarillo y Plateado con dije Cierre",
                     "price": 18000,
                     "discount": 0,
                     "image": "arosArgolla.jpg",
-                    "category": "favoritos"
-               },
-               {
+                    "category": "general"
+     },
+     {
                        "id": 11,
                        "name": "Aros Colgantes",
                        "description": "Aros Colgantes Triangulares",
                        "price": 7000,
                        "discount": 0,
                        "image": "arosColgantes.JPG",
-                       "category": "favoritos"
-                  },
-                  {
+                       "category": "general"
+     },
+     {
                           "id": 12,
                           "name": "Pulsera Bali",
                           "description": "Pulsera Bali con Bolas y Tubos",
                           "price": 9500,
                           "discount": 0,
                           "image": "pulseraBali.jpg",
-                          "category": "favoritos"
-                     },
-                     {
+                          "category": "general"
+     },
+     {
                              "id": 13,
                              "name": "Gargantilla Bali",
                              "description": "Gargantilla Bali con Bolas y Tubos",
                              "price": 11500,
                              "discount": 0,
                              "image": "GargantillaBali.jpg",
-                             "category": "favoritos"
-                        },
-                        {
+                             "category": "general"
+     },
+     {
                                 "id": 14,
                                 "name": "Aros Rose Corazon",
                                 "description": "Aros Rose con dije Corazon y cubics",
                                 "price": 12000,
                                 "discount": 0,
                                 "image": "arosRose.jpg",
-                                "category": "favoritos"
-                           },
-                           {
+                                "category": "general"
+     },
+     {
                                    "id": 15,
                                    "name": "Aros Rose Estrella",
                                    "description": "Aros Rose con dije Estrella y cubics",
                                    "price": 12000,
                                    "discount": 0,
                                    "image": "arosRoseEstrella.jpg",
-                                   "category": "favoritos"
-                              },
-                              {
+                                   "category": "general"
+     },
+     {
                                       "id": 16,
                                       "name": "Aros Rectangulares",
                                       "description": "Aros Rectangulares Plateados y Rose con cubics",
                                       "price": 20000,
                                       "discount": 0,
                                       "image": "arosPLateadosRose.JPG",
-                                      "category": "favoritos"
-                                 }
+                                      "category": "general"
+     }
    ]
