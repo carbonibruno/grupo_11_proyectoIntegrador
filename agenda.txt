@@ -16,6 +16,7 @@ adaptable
 
 - unificar CSS Y diseño general de la web
 
+-chequear si funciona creacion y edicion de productos
 
 
 Agenda personal:
