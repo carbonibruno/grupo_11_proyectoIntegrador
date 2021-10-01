@@ -824,6 +824,7 @@ button{
     text-align: center;
     background-color: #f8e6e3ff;
     padding: 5px;
+    width: 100%;
 }
 
 /*fin listado general de productos/*
@@ -1091,6 +1092,22 @@ header .logo{
     margin-top: 3%;
 }
 
+/*vista productos generales*/
+
+.contenidoProductos{
+    width: 100%;
+}
+.listadoProductos{
+    width: 85%;
+    margin: auto;
+}
+
+.articuloProductos {
+    width: 45%;
+    
+    border: 1px salmon solid;
+}
+/*fin vista general productos tablet*/    
 
 }
 
@@ -1214,6 +1231,17 @@ header .logo{
    width: 100%;
 }
 /*fin nueva cuenta*/
+
+/*inicio vista general productos*/
+.listadoProductos{
+    width: 98%;
+    margin: auto;
+}
+
+.articuloProductos{
+    width: 100%;
+}
+/*fin vista general productos*/
 
 /*footerCelular*/
 
