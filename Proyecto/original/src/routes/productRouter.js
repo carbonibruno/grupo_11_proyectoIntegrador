@@ -11,7 +11,6 @@ routerProductos.get('/crear', productController.crear);
 routerProductos.post('/', productController.store); 
 
 
-
 routerProductos.get('/editar/:id', productController.editar);
 routerProductos.put('/editar/:id', productController.update); 
 

@@ -764,6 +764,70 @@ button{
 
 /*fin editar formulario*/
 
+/*inicio listado general de producto*/
+
+.containerProductos {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.contenidoProductos {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid salmon;
+
+}
+
+.contenidoProductos h3 {
+    width: 100%;
+}
+.filtroProductos{
+    width: 20%;;
+    border: 1px solid salmon;   
+    margin-top: 1%; 
+}
+
+.listadoProductos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.articuloProductos{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+
+/*.articuloProductos a{
+    width: 100%;
+}*/
+.articuloProductos img{
+    width: 100%;
+    
+}
+
+.tituloPrecioProducto{
+    text-align: center;
+    background-color: #f8e6e3ff;
+    padding: 5px;
+}
+
+/*fin listado general de productos/*
+
 /*inicio footer*/
 
 footer{
