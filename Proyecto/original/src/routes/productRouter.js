@@ -5,6 +5,7 @@ const productController = require('../../controllers/productController');
 
 routerProductos.get('/', productController.indexProductos);
 routerProductos.get('/detalle', productController.detalle);
+routerProductos.get('/detalleBruno', productController.bruno);
 routerProductos.get('/carrito', productController.carrito);
 
 routerProductos.get('/crear', productController.crear);

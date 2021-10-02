@@ -12,6 +12,10 @@ const productController = {
         res.render("listadoGeneralProducto", {productos: productos});
     }, 
 
+    bruno: (req,res) => {
+        res.render("detalleBruno")
+    }, 
+       
     detalle: (req,res) => {
         res.render("detalleProducto")
     }, 

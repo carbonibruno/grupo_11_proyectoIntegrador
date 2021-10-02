@@ -829,6 +829,50 @@ button{
 
 /*fin listado general de productos/*
 
+/*inicio detalle producto*/
+
+.containerDetalle{
+    width: 100%;
+}
+
+.contenidoDetalle{
+    width: 90%;
+    margin: auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.fotoDetalle{
+   width: 40%;
+   background-color: white;
+   border: 1px solid salmon;
+}
+
+.fotoDetalle img{
+    width: 100%;
+}
+
+.dataDetalle{
+  width: 50%;
+  margin: auto;
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid salmon;
+}
+
+.dataContenido{
+  width: 100%;  
+}
+
+
+
+
+/*fin detalle producto*/
+
 /*inicio footer*/
 
 footer{

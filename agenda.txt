@@ -3,28 +3,32 @@ sprint 3
 
 -retrospectiva (lucas haber)
 
-- vista detalle de producto: (bruno carboni)
-adaptable
+
+- vista detalle de producto adaptable
 - agregar despues la ruta bien en detalle con el id de cada producto
 
-- usar los partials
+-ligar vista productos
 
-- pagina productos: pagina productos vision general con todos los productos
-(una vez que este la pagina de productos agregar en el index los hipervinculos)
+-agregar hipervinculos
 
-- pagina crear, editar, actualizar
+
+- usar los partials OK
+
+
+- pagina crear, editar, actualizar 
 
 - unificar CSS Y diseño general de la web
 
--chequear si funciona creacion y edicion de productos (ver req bodys)
+-chequear si funciona creacion y edicion de productos (ver req bodys,ver multer, agregar para el put el over)
 
 
 Agenda personal:
 
-Mariano 
+
 
 - cambiar formulario id por seleccionar categoria OK
-- ver hipervinculos home
+- ver hipervinculos home 
 - ver que coincidan name del formulario con req body
+- crear base de datos usuarios
 
 
