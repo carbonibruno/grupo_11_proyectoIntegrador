@@ -833,21 +833,25 @@ button{
 
 .containerDetalle{
     width: 100%;
+    margin-top: 3%;
 }
 
 .contenidoDetalle{
-    width: 90%;
+    width: 80%;
     margin: auto;
-    background-color: darkgoldenrod;
+    background-color: rgb(221, 221, 221);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .fotoDetalle{
-   width: 40%;
+   width: 50%;
+ 
    background-color: white;
-   border: 1px solid salmon;
+ 
 }
 
 .fotoDetalle img{
@@ -857,16 +861,47 @@ button{
 .dataDetalle{
   width: 50%;
   margin: auto;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   border: 1px solid salmon;
 }
 
-.dataContenido{
-  width: 100%;  
+
+.contenidoDetalleProducto{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid salmon;
+  padding-left: 3%;
+  margin-top: 0px;
 }
+
+
+.tituloDetalleProducto{
+    margin-top: 0px;
+}
+
+.descripcionDetalleProducto{
+  margin-top: 15%;  
+  flex-wrap: wrap;
+}
+
+.talleDetalleProducto{
+  margin-top: 5%;
+}
+
+.botonDetalleProducto{
+    background-color: #F8E6E3;
+    margin-left: 40%;
+    width: 20%;
+    font-size: 1.2rem;
+    
+    
+  }
+
 
 
 

@@ -22,9 +22,44 @@
                   
               <div class="dataDetalle">
                     
-                  <div class="dataContenido">
-                      <h4>Titulo Producto</h4>
-                  </div>
+                <div class="contenidoDetalleProducto">
+
+                     <div class="tituloDetalleProducto">
+                      <h4><%= producto.name %> </h4> 
+                      <h4><%= producto.price %> </h4>
+                     </div>
+
+                    <div class="descripcionDetalleProducto">
+                      <h4>Descripcion: <br><%= producto.description %> </h4>
+                    </div>
+
+                    <div class="talleDetalleProducto">
+                      <form action="#">
+                        <h4>Seleccione Talle:</h4>
+                        <label for="talleSeleccionado">S</label>
+                        <input type="radio" name="talleSeleccionado" value="s">  
+                        <label for="talleSeleccionado">M</label>
+                        <input type="radio" name="talleSeleccionado" value="m">
+                        <label for="talleSeleccionado">L</label>
+                        <input type="radio" name="talleSeleccionado" value="l">
+                        <label for="talleSeleccionado">Sin talle</label>
+                        <input type="radio" name="talleSeleccionado" value="st">
+                        <br>
+                        <br>
+
+                        <button class="botonDetalleProducto" type="submit">Comprar</button>
+                      
+                      </form>
+                    </div>
+
+                    <div class="botonesDetalleProducto">
+                              
+                    </div>
+
+                    
+
+                </div> 
+                  
 
               </div>
           

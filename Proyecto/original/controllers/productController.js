@@ -17,7 +17,11 @@ const productController = {
     }, 
        
     detalle: (req,res) => {
-        res.render("detalleProducto")
+        const id = req.params.id;
+		const producto = productos.find(producto => {
+			return producto.id == id;
+		})
+        res.render("detalleProducto", {producto:producto});
     }, 
 
     carrito: (req,res) => {
