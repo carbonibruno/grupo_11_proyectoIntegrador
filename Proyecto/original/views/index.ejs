@@ -82,9 +82,11 @@
           <% productosFavoritos.forEach(productosFavoritos => { %>
           
           <article class="articulo1">
+            <a href="/productos/detalle/<%= productosFavoritos.id %> ">
             <img src="/img/<%= productosFavoritos.image %>" alt="">
             <h4 class="descripcion"><%= productosFavoritos.name %> </h4>
             <p class="precio">$ <%= productosFavoritos.price %> </p>  
+          </a>  
           </article>  
         
            <% }) %> 
