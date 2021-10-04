@@ -17,7 +17,7 @@
           <div class="contenidoDetalle">
               
               <div class="fotoDetalle">
-                  <img src="/img/anillo_relacionados.jpg" alt="">
+                  <img src="/img/<%= producto.image %> " alt="">
               </div>
                   
               <div class="dataDetalle">
@@ -25,17 +25,17 @@
                 <div class="contenidoDetalleProducto">
 
                      <div class="tituloDetalleProducto">
-                      <h4><%= producto.name %> </h4> 
-                      <h4><%= producto.price %> </h4>
+                      <h2><%= producto.name %> </h2> <br>
+                      <h4>$<%= producto.price %> </h4>
                      </div>
 
                     <div class="descripcionDetalleProducto">
-                      <h4>Descripcion: <br><%= producto.description %> </h4>
+                      <h4><strong>Descripcion:</strong> <br><%= producto.description %> </h4>
                     </div>
 
                     <div class="talleDetalleProducto">
                       <form action="#">
-                        <h4>Seleccione Talle:</h4>
+                        <h4><strong>Seleccione Talle:</strong></h4>
                         <label for="talleSeleccionado">S</label>
                         <input type="radio" name="talleSeleccionado" value="s">  
                         <label for="talleSeleccionado">M</label>
@@ -52,7 +52,12 @@
                       </form>
                     </div>
 
-                    <div class="botonesDetalleProducto">
+                    <div class="botonesAdministradorDetalleProducto">
+                      <form action="#">
+                        <p>Administrador:</p>
+                        <button class="botonAdminDetalleProducto" type="submit">Modificar</button>
+                        <button class="botonAdminDetalleProducto" type="submit">Borrar</button>
+                      </form>
                               
                     </div>
 
@@ -71,6 +76,8 @@
 
     </section>
 
+
+    <%- include('partials/envios')  %> 
 
 
     <%- include('partials/footer') %> 

@@ -1,14 +1,13 @@
 
-sprint 3
+sprint 3/4
 
 -retrospectiva (lucas haber)
 
 
-- vista detalle de producto adaptable
-- agregar despues la ruta bien en detalle con el id de cada producto
+- vista detalle de producto adaptable OK
+- agregar despues la ruta bien en detalle con el id de cada producto OK
 
 -ligar vista productos
-
 -agregar hipervinculos
 
 
@@ -19,7 +18,8 @@ sprint 3
 
 - unificar CSS Y diseño general de la web
 
--chequear si funciona creacion y edicion de productos (ver req bodys,ver multer, agregar para el put el over)
+- chequear si funciona creacion y edicion de productos (ver req bodys,ver multer, agregar para el put el over)
+
 
 
 Agenda personal:

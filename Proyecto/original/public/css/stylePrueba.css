@@ -839,23 +839,29 @@ button{
 .contenidoDetalle{
     width: 80%;
     margin: auto;
-    background-color: rgb(221, 221, 221);
+    background-color: #f8e6e3ff;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    
 }
 
 .fotoDetalle{
    width: 50%;
- 
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   flex-wrap: wrap;
+   height: 600px;
    background-color: white;
  
 }
 
 .fotoDetalle img{
     width: 100%;
+    height: 100%;
 }
 
 .dataDetalle{
@@ -865,19 +871,28 @@ button{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 1px solid salmon;
+ 
 }
-
 
 .contenidoDetalleProducto{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 1px solid salmon;
+ border-right: 1px solid #f8e6e3ff;
   padding-left: 3%;
   margin-top: 0px;
+
 }
+
+.contenidoDetalleProducto h2{
+    font-weight: bold;
+    
+}
+
+.contenidoDetalleProducto h4{
+   font-weight: normal;
+}   
 
 
 .tituloDetalleProducto{
@@ -885,23 +900,27 @@ button{
 }
 
 .descripcionDetalleProducto{
-  margin-top: 15%;  
+  margin-top: 13%;  
   flex-wrap: wrap;
 }
 
 .talleDetalleProducto{
   margin-top: 5%;
+
 }
 
 .botonDetalleProducto{
     background-color: #F8E6E3;
-    margin-left: 40%;
-    width: 20%;
-    font-size: 1.2rem;
-    
-    
-  }
-
+    margin-left: 22%;
+    text-align: center;
+    width: 35%;
+    font-size: 1.2rem;      
+}
+.botonAdminDetalleProducto{
+    background-color: #F8E6E3;  
+    width: 35%;
+    font-size: 1.2rem;      
+}
 
 
 
@@ -1187,6 +1206,12 @@ header .logo{
     border: 1px salmon solid;
 }
 /*fin vista general productos tablet*/    
+/*inicio detalle producto*/
+.contenidoDetalle{
+    width: 100%;
+}
+
+/*fin detalle producto*/
 
 }
 
@@ -1321,6 +1346,18 @@ header .logo{
     width: 100%;
 }
 /*fin vista general productos*/
+
+/*inicio detalle producto*/
+
+.fotoDetalle{
+    width: 100%;
+}
+
+.dataDetalle{
+    margin-top: 3%;
+    border-right: none ;
+    width: 100%;
+}
 
 /*footerCelular*/
 
