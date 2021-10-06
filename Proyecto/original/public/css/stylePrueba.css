@@ -782,7 +782,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid salmon;
+  
 
 }
 
@@ -791,7 +791,7 @@ button{
 }
 .filtroProductos{
     width: 20%;;
-    border: 1px solid salmon;   
+     
     margin-top: 1%; 
 }
 
@@ -810,6 +810,7 @@ button{
     margin-left: 2%;
     margin-top: 2%;
 }
+
 
 
 /*.articuloProductos a{

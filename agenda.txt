@@ -10,20 +10,27 @@ sprint 3/4
 -ligar vista productos
 -agregar hipervinculos
 
+- Carrito!
 
 - usar los partials OK
 
 
-- pagina crear, editar, actualizar 
-
-- unificar CSS Y diseño general de la web
-
+- pagina crear, editar, actualizar (poner links en productos) 
 - chequear si funciona creacion y edicion de productos (ver req bodys,ver multer, agregar para el put el over)
 
 
 
-Agenda personal:
+- unificar CSS Y diseño general de la web
 
+
+
+
+
+por vista:
+
+index- mobile mail
+     - search
+     - agregar link a Carrito
 
 
 - cambiar formulario id por seleccionar categoria OK
