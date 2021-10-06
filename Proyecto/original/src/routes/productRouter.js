@@ -9,6 +9,7 @@ routerProductos.get('/detalle/:id', productController.detalle);
 
 
 routerProductos.get('/carrito', productController.carrito);
+routerProductos.get('/carritoProducto', productController.carritoProducto);
 
 routerProductos.get('/crear', productController.crear);
 routerProductos.post('/', productController.store); 
