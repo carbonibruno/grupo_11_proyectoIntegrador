@@ -1,29 +1,33 @@
 
-sprint 3/4
+sprint 3
 
 -retrospectiva (lucas haber)
-
 
 - vista detalle de producto adaptable OK
 - agregar despues la ruta bien en detalle con el id de cada producto OK
 
--ligar vista productos
--agregar hipervinculos
+-ligar vista productos OK
+-agregar hipervinculos OK
+-usar los partials OK
+
 
 - Carrito!
 
-- usar los partials OK
-
-
-- pagina crear, editar, actualizar (poner links en productos) 
-- chequear si funciona creacion y edicion de productos (ver req bodys,ver multer, agregar para el put el over)
-
-
-
 - unificar CSS Y diseño general de la web
 
+SPRINT 4
 
+-Completar funcionalidad crud
 
+-chequear los req bodys, instalar multer y method overwrite
+
+-chequar rutas
+
+crear
+editar
+eliminar
+
+- hacer json usuarios
 
 
 por vista:
