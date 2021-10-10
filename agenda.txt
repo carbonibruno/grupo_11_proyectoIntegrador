@@ -1,5 +1,5 @@
 
-sprint 3
+SPRINT 3
 
 -retrospectiva (lucas haber)
 
@@ -9,7 +9,6 @@ sprint 3
 -ligar vista productos OK
 -agregar hipervinculos OK
 -usar los partials OK
-
 
 - Carrito!
 
@@ -37,9 +36,6 @@ index- mobile mail
      - agregar link a Carrito
 
 
-- cambiar formulario id por seleccionar categoria OK
-- ver hipervinculos home 
-- ver que coincidan name del formulario con req body
-- crear base de datos usuarios
+
 
 
