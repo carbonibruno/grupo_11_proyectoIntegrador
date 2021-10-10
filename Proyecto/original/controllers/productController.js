@@ -45,17 +45,17 @@ const productController = {
             id: productos[products.length - 1].id + 1,
             name: req.body.nombre,
             price: req.body.price,
-            discount: req.body.discount,
+            /*discount: req.body.discount,*/
             category: req.body.category,
             description: req.body.description,
-            image: "default-image.png",
+            image: req.file.filename
          }
  
          productos.push(newProduct);
   
          fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
  
-         res.redirect("/crearProducto"); /*cambiar cuando este vista productos */
+         res.redirect("/productos/crear"); /*cambiar cuando este vista productos */
         
     },
     

@@ -23,7 +23,7 @@
               
               <div class="cuestionarioCrearProducto">
                 
-                <form id="formDatosPersonales" action="/productos" method="POST">
+                <form id="formDatosPersonales" action="/productos" method="POST" enctype="multipart/form-data">
                    
                     <div class="datosProductos">
                     
@@ -37,9 +37,9 @@
                         <br>
                         <p>Seleccione Categoría:</p> <br>
                         <label for="categoria">General</label>
-                        <input type="checkbox" name="categoria" id="general" value="general">
+                        <input type="checkbox" name="category" id="general" value="general">
                         <label for="categoria">Destacado</label>
-                        <input type="checkbox" name="categoria" id="destacado" value="destacado">
+                        <input type="checkbox" name="category" id="destacado" value="destacado">
                   
                     </div>
              
@@ -48,10 +48,10 @@
                       <p><strong>Mas datos</strong></p><br>
 
                       <label for="textarea">Descripcion:</label><br>
-                      <input type="textarea" name="descripcion" id="descripcion" placeholder="Descripcion del Producto" required>
+                      <input type="textarea" name="description" id="description" placeholder="Descripcion del Producto" required>
                       <br>
 
-                      <p>Perfil del comprador:</p> <br>
+                      <p>Seleccione talle:</p> <br>
                       
                       <div class="seleccionTalle">
                       <label for="talle">S</label>
@@ -65,8 +65,8 @@
                       </div>
                       <br>
 
-                      <label for="foto">Foto Producto</label><br>
-                      <input type="file" name="fotoProducto" id="fotoProducto" placeholder="Seleccione Foto">
+                      <label for="image">Foto Producto</label><br>
+                      <input type="file" name="image" id="image" placeholder="Seleccione Foto">
                     </div>
                   
                     <button type="submit" id="botonNuevaCuenta">CREAR PRODUCTO</button>

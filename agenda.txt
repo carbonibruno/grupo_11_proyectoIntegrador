@@ -10,7 +10,7 @@ SPRINT 3
 -agregar hipervinculos OK
 -usar los partials OK
 
-- Carrito!
+- Carrito! (falta mobile)
 
 - unificar CSS Y diseño general de la web
 
@@ -18,13 +18,14 @@ SPRINT 4
 
 -Completar funcionalidad crud
 
--chequear los req bodys, instalar multer y method overwrite
+-chequear los req bodys, instalar multer OK y method overwrite
 
 -chequar rutas
 
-crear
+crear En esta 10/10
 editar
 eliminar
+
 
 - hacer json usuarios
 
