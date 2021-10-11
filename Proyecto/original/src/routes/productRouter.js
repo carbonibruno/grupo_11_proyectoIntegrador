@@ -32,7 +32,11 @@ routerProductos.post('/', upload.single("image"), productController.store);
 
 /*edicion*/
 routerProductos.get('/editar/:id', productController.editar);
-routerProductos.put('/editar/:id', productController.update); 
+routerProductos.put('/editar/:id', upload.single("image"), productController.update); 
+
+/*falta eliminar*/
+
+
 
 
 module.exports = routerProductos;

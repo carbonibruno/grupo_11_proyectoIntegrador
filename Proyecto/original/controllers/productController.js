@@ -82,7 +82,7 @@ const productController = {
 			 id: productToEdit.id,
 			 name: req.body.name,
 			 price: req.body.price,
-			 discount: req.body.discount,
+			 /*discount: req.body.discount,*/
 			 category: req.body.category,
 			 description: req.body.description,
 			 image: productToEdit.image,
@@ -93,8 +93,20 @@ const productController = {
 		fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
 
         res.redirect("listadoGeneralProducto"); 
-    }
+    },
 
+    /*destroy:  (req,res) => {
+    
+    let id = req.params.id;
+
+    let finalProductos = productos.filter(product => {
+        return id != product.id;
+    })
+
+    fs.writeFileSync(productsFilePath, JSON.stringify(finalProductos, null, " "));
+    
+    res.redirect("/productos"); 
+  }*/
      
 }
 
