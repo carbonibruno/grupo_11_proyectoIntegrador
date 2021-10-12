@@ -6,8 +6,8 @@ const usersController = {
         res.render("accesoUsuario");
     },
 
-    newUser: (req,res) => {
-        res.render("newUser");
+    nuevoUsuario: (req,res) => {
+        res.render("nuevoUsuario");
     }
     
 }

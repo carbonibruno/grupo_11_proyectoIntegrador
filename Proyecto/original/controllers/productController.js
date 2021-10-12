@@ -12,10 +12,6 @@ const productController = {
         res.render("listadoGeneralProducto", {productos: productos});
     }, 
 
-    bruno: (req,res) => {
-        res.render("detalleBruno")
-    }, 
-       
     detalle: (req,res) => {
         const id = req.params.id;
 		const producto = productos.find(producto => {
@@ -23,10 +19,6 @@ const productController = {
 		})
         res.render("detalleProducto", {producto:producto});
     }, 
-
-    carrito: (req,res) => {
-    res.render("carrito")
-    },
 
     carritoProducto: (req,res) => {
         res.render("carritoProducto")
@@ -42,10 +34,10 @@ const productController = {
     store: (req,res) => {
         
         const newProduct = {
-            id: productos[products.length - 1].id + 1,
+            id: productos[productos.length - 1].id + 1,
             name: req.body.nombre,
             price: req.body.price,
-            /*discount: req.body.discount,*/
+            discount: 0,
             category: req.body.category,
             description: req.body.description,
             image: req.file.filename
@@ -54,8 +46,8 @@ const productController = {
          productos.push(newProduct);
   
          fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
- 
-         res.redirect("/productos/crear"); /*cambiar cuando este vista productos */
+         
+         res.redirect("/productos"); /*cambiar cuando este vista productos */
         
     },
     
@@ -82,7 +74,7 @@ const productController = {
 			 id: productToEdit.id,
 			 name: req.body.name,
 			 price: req.body.price,
-			 /*discount: req.body.discount,*/
+			 discount: 0,
 			 category: req.body.category,
 			 description: req.body.description,
 			 image: productToEdit.image,
@@ -92,7 +84,7 @@ const productController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
 
-        res.redirect("listadoGeneralProducto"); 
+        res.redirect("/productos"); 
     },
 
     /*destroy:  (req,res) => {
