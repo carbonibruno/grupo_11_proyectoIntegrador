@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <%- include('partials/head') %> 
+    <title>Detalle Producto</title>
+</head>
+<body>
+
+    <%- include('partials/header') %>
+    
+    
+    <section class="detalleProducto">
+
+       <div class="containerDetalle">
+
+          <div class="contenidoDetalle">
+              
+              <div class="fotoDetalle">
+                  <img src="/img/<%= producto.image %> " alt="">
+              </div>
+                  
+              <div class="dataDetalle">
+                    
+                <div class="contenidoDetalleProducto">
+
+                     <div class="tituloDetalleProducto">
+                      <h2><%= producto.name %> </h2> <br>
+                      <h4>$<%= producto.price %> </h4>
+                     </div>
+
+                    <div class="descripcionDetalleProducto">
+                      <h4><strong>Descripcion:</strong> <br><%= producto.description %> </h4>
+                    </div>
+
+                    <div class="talleDetalleProducto">
+                      <form action="#">
+                        <h4><strong>Seleccione Talle:</strong></h4>
+                        <label for="talleSeleccionado">S</label>
+                        <input type="radio" name="talleSeleccionado" value="s">  
+                        <label for="talleSeleccionado">M</label>
+                        <input type="radio" name="talleSeleccionado" value="m">
+                        <label for="talleSeleccionado">L</label>
+                        <input type="radio" name="talleSeleccionado" value="l">
+                        <label for="talleSeleccionado">Sin talle</label>
+                        <input type="radio" name="talleSeleccionado" value="st">
+                        <br>
+                        <br>
+
+                        <button class="botonDetalleProducto" type="submit">Comprar</button>
+                      
+                      </form>
+                    </div>
+
+                    <div class="botonesAdministradorDetalleProducto">
+                      
+                 
+                        <p>Administrador:</p>
+                      
+                        <button class="botonAdminDetalleProducto" type="submit"><a href="/productos/editar/<%=producto.id %>">Modificar</a></button>
+                      
+ 
+                        <button class="botonAdminDetalleProducto" type="submit">Borrar</button>
+              
+                    </div>
+
+                    
+
+                </div> 
+                  
+
+              </div>
+          
+
+          </div>
+
+       </div>
+
+
+    </section>
+
+
+    <%- include('partials/envios')  %> 
+
+
+    <%- include('partials/footer') %> 
+
+    
+</body>
+</html>
