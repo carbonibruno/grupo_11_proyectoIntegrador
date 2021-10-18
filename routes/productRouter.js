@@ -3,19 +3,23 @@ const routerProductos = express.Router();
 const path = require('path')
 const multer = require('multer');
 
+const {body} =require('express-validator');
+
 const productController = require('../controllers/productController');
 
 /*multer*/
 
 const storage = multer.diskStorage({ 
-    destination: 
-    function (req, file, cb) {
-       cb(null, path.resolve('public/img'));
+    destination: (req, file, cb) => {
+       cb(null, ('./public/img'));
     },
-    filename: function (req, file, cb) {
-       cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`);
+    filename: (req, file, cb) => {
+        let fileName = `${Date.now()}_img${path.extname(file.originalname)}`
+       cb(null, fileName);
     }
 })
+
+
 /*const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, "./public/img");
