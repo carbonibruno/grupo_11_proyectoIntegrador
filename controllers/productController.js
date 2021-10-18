@@ -33,8 +33,6 @@ const productController = {
     
     store: (req,res) => {
 
-        console.log(req.body);
-        
         const newProduct = {
             id: productos[productos.length - 1].id + 1,
             name: req.body.nombre,
@@ -42,7 +40,7 @@ const productController = {
             discount: 0,
             category: req.body.category,
             description: req.body.description,
-            image: req.body.file
+            image: req.file.filename
          }
  
          productos.push(newProduct);

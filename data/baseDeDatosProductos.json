@@ -177,5 +177,19 @@
   "discount": 0,
   "category": "general",
   "description": "Dopkasdposak"
+ },
+ {
+  "id": 22,
+  "price": "5000",
+  "discount": 0,
+  "category": "general",
+  "description": "Aros magicos de moda"
+ },
+ {
+  "id": 23,
+  "price": "12421",
+  "discount": 0,
+  "category": "general",
+  "description": "asfsa"
  }
 ]
