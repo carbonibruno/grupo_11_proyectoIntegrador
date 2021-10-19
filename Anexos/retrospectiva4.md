@@ -1,5 +1,11 @@
 # grupo_11_proyectoIntegrador
 
+Retrospectiva Sprint 4:
+
+Intentar ser mas ordenado
+Trabajar mas en equipo
+
+
 Grupo 11:
 
 Integrantes:
