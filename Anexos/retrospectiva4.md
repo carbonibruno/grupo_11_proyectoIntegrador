@@ -5,6 +5,8 @@ Retrospectiva Sprint 4:
 Intentar ser mas ordenado
 Trabajar mas en equipo
 
+Resumen final Sprint 4:
+Falta hacer funcionar multer, solucionas updates de productos, y probar eliminacion de productos. 
 
 Grupo 11:
 
