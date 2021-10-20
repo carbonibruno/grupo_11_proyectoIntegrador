@@ -47,7 +47,7 @@ routerProductos.post('/crear', upload.single("image"), productController.store);
 
 /*edicion*/
 routerProductos.get('/editar/:id', productController.editar);
-routerProductos.put('/editar/:id', productController.update); 
+routerProductos.post('/editar/:id',upload.single("image"), productController.update); 
 
 
 /*falta eliminar*/

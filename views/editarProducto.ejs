@@ -24,7 +24,7 @@
               
               <div class="cuestionarioEditarProducto">
                 
-                <form id="formDatosPersonales" action="/productos/editar/<%= productToEdit.id %>?_method=PUT" method="POST">
+                <form id="formDatosPersonales" action="/productos/editar/<%= productToEdit.id %>" method="POST">
                    
                     <div class="datosEditarProductos">
                     
@@ -66,11 +66,13 @@
                       </div>
                       <br>
 
-                      <label for="foto">Foto Producto</label><br>
+                      <label for="image">Foto Producto</label><br>
                       <input type="file" name="image" id="image" placeholder="Seleccione Foto">
                     </div>
                   
                     <button type="submit" id="botonNuevaCuenta">EDITAR PRODUCTO</button>
+
+                    
               
                 </form>
 

@@ -59,8 +59,9 @@
                       
                         <button class="botonAdminDetalleProducto" type="submit"><a href="/productos/editar/<%=producto.id %>">Modificar</a></button>
                       
- 
+                       <form action="/productos/delete/<%=producto.id %>?_method=DELETE" method="post"  > 
                         <button class="botonAdminDetalleProducto" type="submit">Borrar</button>
+                      </form> 
               
                     </div>
 

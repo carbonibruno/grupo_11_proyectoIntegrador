@@ -40,7 +40,7 @@ const productController = {
             discount: 0,
             category: req.body.category,
             description: req.body.description,
-            image: req.file.filename
+            image: "anillos.jpg"
          }
  
          productos.push(newProduct);
@@ -77,10 +77,16 @@ const productController = {
 			 discount: 0,
 			 category: req.body.category,
 			 description: req.body.description,
-			 image: productToEdit.image,
+			 image: req.file ? req.file.filename : productToEdit.image 
 		};
 
-        productos[id -1] = productToEdit;
+        /*productos[id -1] = productToEdit;*/
+
+        productos.forEach((producto, index) => {
+            if (producto.id == id){
+                productos[index] = productToEdit
+            }
+        });
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
 
@@ -89,9 +95,9 @@ const productController = {
 
     destroy:  (req,res) => {
 
-        res.send("producto eliminado");
+        /*res.send("producto eliminado");*/
     
-    /*let id = req.params.id;
+    let id = req.params.id;
 
     let finalProductos = productos.filter(product => {
         return id != product.id;
@@ -100,10 +106,8 @@ const productController = {
     fs.writeFileSync(productsFilePath, JSON.stringify(finalProductos, null, " "));
     
     res.redirect("/productos"); 
-  }*/
-   }
-     
-
+    
+    }
 }
-
+     
 module.exports = productController;

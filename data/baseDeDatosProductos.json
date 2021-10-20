@@ -108,15 +108,6 @@
   "category": "general"
  },
  {
-  "id": 13,
-  "name": "Gargantilla Bali",
-  "description": "Gargantilla Bali con Bolas y Tubos",
-  "price": 11500,
-  "discount": 0,
-  "image": "GargantillaBali.jpg",
-  "category": "general"
- },
- {
   "id": 14,
   "name": "Aros Rose Corazon",
   "description": "Aros Rose con dije Corazon y cubics",
@@ -191,5 +182,13 @@
   "discount": 0,
   "category": "general",
   "description": "asfsa"
+ },
+ {
+  "id": 24,
+  "price": "5000",
+  "discount": 0,
+  "category": "general",
+  "description": "Aodpoasop",
+  "image": "anillos.jpg"
  }
 ]
