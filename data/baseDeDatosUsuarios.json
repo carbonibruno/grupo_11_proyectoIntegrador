@@ -1,48 +1,59 @@
 [
-  {
-    "id": 1,
-    "nombre": "Mariano",
-    "apellido": "Salperin",
-    "dni": 31029581,
-    "email": "msalperin@hotmail.com",
-    "contraseña": "Mariano1234",
-    "categoria": "Administrador"   
-  },
-  {
-    "id": 2,
-    "nombre": "Pablo",
-    "apellido": "Perez",
-    "dni": 45000555,
-    "email": "pperez@hotmail.com",
-    "contraseña": "pablo1234",
-    "categoria": "Usuario"   
-  },
-  {
-    "id": 3,
-    "nombre": "Marcela",
-    "apellido": "Gomez",
-    "dni": 45005452,
-    "email": "mgomez@hotmail.com",
-    "contraseña": "marcela1234",
-    "categoria": "Usuario"   
-  },
-  {
-    "id": 4,
-    "nombre": "Micaela",
-    "apellido": "Zavalla",
-    "dni": 42526842,
-    "email": "mzavalla@hotmail.com",
-    "contraseña": "micaela1234",
-    "categoria": "Usuario"   
-  },
-  {
-    "id": 5,
-    "nombre": "Jorge",
-    "apellido": "Superman",
-    "dni": 45052482,
-    "email": "jsuperman@hotmail.com",
-    "contraseña": "jorge1234",
-    "categoria": "Usuario"   
-  }      
-
+ {
+  "id": 1,
+  "nombre": "Mariano",
+  "apellido": "Salperin",
+  "dni": 31029581,
+  "email": "msalperin@hotmail.com",
+  "contraseña": "Mariano1234",
+  "categoria": "Administrador"
+ },
+ {
+  "id": 2,
+  "nombre": "Pablo",
+  "apellido": "Perez",
+  "dni": 45000555,
+  "email": "pperez@hotmail.com",
+  "contraseña": "pablo1234",
+  "categoria": "Usuario"
+ },
+ {
+  "id": 3,
+  "nombre": "Marcela",
+  "apellido": "Gomez",
+  "dni": 45005452,
+  "email": "mgomez@hotmail.com",
+  "contraseña": "marcela1234",
+  "categoria": "Usuario"
+ },
+ {
+  "id": 4,
+  "nombre": "Micaela",
+  "apellido": "Zavalla",
+  "dni": 42526842,
+  "email": "mzavalla@hotmail.com",
+  "contraseña": "micaela1234",
+  "categoria": "Usuario"
+ },
+ {
+  "id": 5,
+  "nombre": "Jorge",
+  "apellido": "Superman",
+  "dni": 45052482,
+  "email": "jsuperman@hotmail.com",
+  "contraseña": "jorge1234",
+  "categoria": "Usuario"
+ },
+ {
+  "id": 6,
+  "busqueda": "",
+  "text": "Jose ",
+  "apellido": "Perez",
+  "dni": "31029811",
+  "email": "Jose@hotmail.com",
+  "password": [
+   "1234",
+   "1234"
+  ]
+ }
 ]
