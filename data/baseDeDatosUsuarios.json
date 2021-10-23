@@ -76,5 +76,14 @@
   "dni": "12398729",
   "email": "pperez@gmail.com",
   "password": "$2a$10$OZ7OKAMtCGfvHq9YLRd4euYRSRF1MKwwaxdIBNW/6Hjg0ck.mAyJ2"
+ },
+ {
+  "id": 9,
+  "busqueda": "",
+  "nombre": "Juan ",
+  "apellido": "Perez",
+  "dni": "1234355",
+  "email": "juanperez@gmail.com",
+  "password": "$2a$10$uylK.Kt2sYPKhbRkYFyzmuVzvJUAI8SSRn5G8CzpDltuQ5mqNlcPy"
  }
 ]
