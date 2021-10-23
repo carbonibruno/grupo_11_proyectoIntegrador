@@ -1,5 +1,6 @@
 const fs = require('fs');
 const modeloUsuario = require('../models/modeloUsuario'); 
+const bcryptjs = require('bcryptjs');
 
 const usersController = {
     
@@ -10,7 +11,13 @@ const usersController = {
 
     processRegister: (req,res) =>{
     
-    modeloUsuario.create(req.body);    
+    let userToCreate = {
+        ...req.body,
+        password: bcryptjs.hashSync(req.body.password, 10)
+        /*falta avatar  avatar: req.file.filename*/
+    }
+
+    modeloUsuario.create(userToCreate);    
     
     res.send('Usuario Agregado');
     
