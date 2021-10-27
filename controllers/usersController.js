@@ -2,10 +2,13 @@ const fs = require('fs');
 const modeloUsuario = require('../models/modeloUsuario'); 
 const bcryptjs = require('bcryptjs');
 
+
+
 const usersController = {
     
 
     acceso: (req,res) => {
+        console.log(req.session);
         res.render("accesoUsuario");
     },
 
@@ -42,7 +45,9 @@ const usersController = {
        if(userToLogin){
          let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
          if (isOkThePassword){
-             return res.send('Okey')
+             delete userToLogin.password;
+             req.session.userLogged = userToLogin;
+             return res.redirect('/')
          }  
          return res.send(userToLogin);
        }
@@ -57,8 +62,12 @@ const usersController = {
            }); */    
 
        /*res.render('nuevoUsuario');*/
+    },
+    
+    logout: (req,res) =>{
+        req.session.destroy();
+        return res.redirect('/')
     }
-
        
 }
 

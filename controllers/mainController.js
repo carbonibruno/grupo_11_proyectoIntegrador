@@ -17,7 +17,9 @@ const mainController = {
 			return productos.category == "general";
 		});
 
-        res.render("index", {productosFavoritos: productosFavoritos, productosGeneral: productosGeneral, productos: productos});
+		 console.log(req.session.userLogged)
+
+        res.render("index", {productosFavoritos: productosFavoritos, productosGeneral: productosGeneral, productos: productos, user: req.session.userLogged});
     },
 
 }

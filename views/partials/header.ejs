@@ -28,6 +28,10 @@
             <div class="submit"><i class="fa fa-search"></i></div>                
         </div>
 
+        <% if(locals.isLogged) {%>
+              <p>Hola <%= locals.userLogged.nombre %>  </p>
+        <% } %>
+
         <div class="accesoUsuario">
             <a href="/usuarios/acceso"><i class="fas fa-user"></i></a>
         </div>

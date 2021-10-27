@@ -85,5 +85,14 @@
   "dni": "1234355",
   "email": "juanperez@gmail.com",
   "password": "$2a$10$uylK.Kt2sYPKhbRkYFyzmuVzvJUAI8SSRn5G8CzpDltuQ5mqNlcPy"
+ },
+ {
+  "id": 10,
+  "busqueda": "",
+  "nombre": "Jose",
+  "apellido": "Gomez",
+  "dni": "123402",
+  "email": "jgomez@hotmail.com",
+  "password": "$2a$10$wLA45SsdrK85DhvLe72znuYDq0W6a0.TKFp/q2ofr1ZfNEK7vmHH6"
  }
 ]
