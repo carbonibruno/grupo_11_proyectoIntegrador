@@ -9,7 +9,8 @@ const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const mainController = {
     
     index: (req,res) => {
-        const productosFavoritos = productos.filter(productos => {
+        console.log(req.cookies.userEmail);
+		const productosFavoritos = productos.filter(productos => {
 			return productos.category == "favoritos";
 		});
         

@@ -1,47 +1,20 @@
 
-Perndiend SPRINT 4 
+Pendiente SPRINT 4 
 multer
+menu desplegable por vista
 
 Sprint 5
 
+- hacer boton recordar en vista acceso usuario
+- (Voy minuto 1:37)
+-ver y agregar logout
 
 
-SPRINT 3
-
--retrospectiva (lucas haber)
-
-- vista detalle de producto adaptable OK
-- agregar despues la ruta bien en detalle con el id de cada producto OK
-
--ligar vista productos OK
--agregar hipervinculos OK
--usar los partials OK
-
-- Carrito! (falta mobile)
-
-- unificar CSS Y diseño general de la web
-
-SPRINT 4
-
--Completar funcionalidad crud
-
--chequear los req bodys, instalar multer OK y method overwrite
-
--chequar rutas
-
-crear En esta 10/10
-editar
-eliminar
 
 
-- hacer json usuarios
 
 
-por vista:
 
-index- mobile mail
-     - search
-     - agregar link a Carrito
 
 
 
