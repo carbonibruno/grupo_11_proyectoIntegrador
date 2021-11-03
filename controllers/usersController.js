@@ -11,6 +11,7 @@ const usersController = {
         res.render("accesoUsuario");
     },
 
+    /*crear usuario*/
     processRegister: (req,res) =>{
     
     let userInDB = modeloUsuario.findByField('email', req.body.email);
@@ -32,12 +33,14 @@ const usersController = {
     res.redirect('/usuarios/acceso');
     
     }, 
-
+    
+    /*va a la vista de nuevo usuario*/
     nuevoUsuario: (req,res) => {
         /*res.cookie('testing', "hola", {maxAge: 1000 * 30});*/
         res.render("nuevoUsuario");
     },
-
+    
+    /*controlador para cuando entra un usuario existente*/
     loginProcess: (req,res) => {
 
        let userToLogin = modeloUsuario.findByField('email', req.body.email); 
@@ -68,6 +71,7 @@ const usersController = {
        /*res.render('nuevoUsuario');*/
     },
     
+    /*agregar logout*/
     logout: (req,res) =>{
         res.clearCookie('userEmail');
         req.session.destroy();
