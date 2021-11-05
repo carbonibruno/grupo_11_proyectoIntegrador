@@ -3,12 +3,11 @@ Pendiente SPRINT 4
 multer
 menu desplegable por vista
 
-Sprint 5
-
+-Sprint 5
 - hacer boton recordar en vista acceso usuario
-- (Voy minuto 1:37)
+- 
 -ver y agregar logout
-
+-vista de administrador
 
 
 
