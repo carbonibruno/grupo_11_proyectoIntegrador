@@ -190,5 +190,17 @@
   "category": "general",
   "description": "Aodpoasop",
   "image": "anillos.jpg"
+ },
+ {
+  "id": 25,
+  "price": "5000",
+  "category": "general",
+  "description": "aksf´paks"
+ },
+ {
+  "id": 26,
+  "price": "5000",
+  "category": "general",
+  "description": "aksf´paks"
  }
 ]

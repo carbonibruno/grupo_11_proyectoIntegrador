@@ -35,12 +35,11 @@ const productController = {
 
         const newProduct = {
             id: productos[productos.length - 1].id + 1,
-            name: req.body.nombre,
+            name: req.body.name,
             price: req.body.price,
-            discount: 0,
             category: req.body.category,
             description: req.body.description,
-            image: "anillos.jpg"
+            image: req.file.filename
          }
  
          productos.push(newProduct);

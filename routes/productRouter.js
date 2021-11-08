@@ -1,6 +1,6 @@
 const express = require('express');
 const routerProductos = express.Router();
-const path = require('path')
+const path = require('path');
 const multer = require('multer');
 
 const productController = require('../controllers/productController');
@@ -17,17 +17,29 @@ const storage = multer.diskStorage({
        cb(null, fileName);
     }
 })*/
-
-
+/*cb(null, path.join(__dirname,'../public/img'));*/
+/*
 const storage = multer.diskStorage({ 
     destination: (req, file, cb) => {
-       cb(null, path.join(__dirname,'../public/img'));
+       cb(null, '../public/img');
     },
     filename: (req, file, cb) => {
-       let fileName = 'img-' + Date.now() + path.extname(file.originalname);
-       cb(null, fileName);
-    }
+      cb(null, ${Date.now()}_img_${path.extname(file.originalname)}); 
+      /*let fileName = 'img-' + Date.now() + path.extname(file.originalname);
+       cb(null, fileName);*/
+    /*}
+})*/
+
+const storage = multer.diskStorage({ 
+   destination: function (req, file, cb) {
+      cb(null, './public/img');
+   },
+   filename: function (req, file, cb) {
+  /*cb(null, `${Date.now}()_img_${path.extname(file.originalname)}`);*/
+      cb(null, 'foto' + '-' + Date.now() + path.extname(file.originalname))
+   }
 })
+
 
 const upload = multer({storage: storage});
 
