@@ -66,5 +66,8 @@ routerProductos.post('/editar/:id',upload.single("image"), productController.upd
 
 routerProductos.delete('/delete/:id', productController.destroy);
 
+/*ruta prueba db*/
+routerProductos.get('/prueba', productController.prueba);
+
 
 module.exports = routerProductos;

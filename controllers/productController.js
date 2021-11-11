@@ -1,13 +1,24 @@
 
 const fs = require('fs');
 const path = require('path');
-/*const { update } = require('../../../../../Programacion/Full/Clase 21_Get/material-revisado/src/controllers/productsController');*/
 
 const productsFilePath = path.join(__dirname, '../data/baseDeDatosProductos.json');
 const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+/*db*/
+/*
+let db = require('../database/models'); 
+*/
+
+const db = require('../database/models');
+const sequelize = db.sequelize;
+
 const productController = {
     
+    prueba: (req,res) => {
+        res.render("pruebaDb") 
+    },    
+
     indexProductos: (req,res) => {
         res.render("listadoGeneralProducto", {productos: productos});
     }, 
