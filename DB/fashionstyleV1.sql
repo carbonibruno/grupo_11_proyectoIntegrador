@@ -64,34 +64,15 @@ insert into fashionstyledb.categories (id, category) values
 (1, "destacado"), (2, "general")
 
 insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(1, "Aros de plata", "Aros de plata de alta calidad. Realza tu look con estos aros finos y delicados", 10000, "aros_relacionados.jpg", 1)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(2, "Anillo del poder", "Anillo de plata con figura de ajederez. Un anillo para gobernar a todos.", 5000, "anillo_relacionados.jpg", 1)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(3, "Aros Combinados", "Aros combinados de plata y oro. Luci de la mejor manera en cada ocasion", 7500, "aros2_relacionados.jpg", 1)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(4, "Collar Decatron", "Anillo de plata con figura de ajederez. Un anillo para gobernar a todos.", 4500, "collares_relacionados.jpg", 1)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(5, "Collar Circulos", "Collar de circulos largo 60cm", 9000, "collar_circulos.JPG", 2)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(6, "Aros Rose", "Aros Rose Ojo con cubics", 12000, "arosRoseOjos.JPG", 2)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(7, "Gargantilla", "Gargantilla con cubics y cuernos ", 10000, "Gargantilla.JPG", 2)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(8, "Pulsera Bolas", "Pulsera Bolas con dije Cruz", 9000, "PulseraBolas.JPG", 2)
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
-(9, "Gargantilla Bolas", "Gargantilla con Bolas y Tubos", 6000, "gargantillaBolas.jpg", 2)
-
-
-insert into fashionstyledb.products (id, name, description, price, image, category_id) values
+(1, "Aros de plata", "Aros de plata de alta calidad. Realza tu look con estos aros finos y delicados", 10000, "aros_relacionados.jpg", 1),
+(2, "Anillo del poder", "Anillo de plata con figura de ajederez. Un anillo para gobernar a todos.", 5000, "anillo_relacionados.jpg", 1),
+(3, "Aros Combinados", "Aros combinados de plata y oro. Luci de la mejor manera en cada ocasion", 7500, "aros2_relacionados.jpg", 1),
+(4, "Collar Decatron", "Anillo de plata con figura de ajederez. Un anillo para gobernar a todos.", 4500, "collares_relacionados.jpg", 1),
+(5, "Collar Circulos", "Collar de circulos largo 60cm", 9000, "collar_circulos.JPG", 2),
+(6, "Aros Rose", "Aros Rose Ojo con cubics", 12000, "arosRoseOjos.JPG", 2),
+(7, "Gargantilla", "Gargantilla con cubics y cuernos ", 10000, "Gargantilla.JPG", 2),
+(8, "Pulsera Bolas", "Pulsera Bolas con dije Cruz", 9000, "PulseraBolas.JPG", 2),
+(9, "Gargantilla Bolas", "Gargantilla con Bolas y Tubos", 6000, "gargantillaBolas.jpg", 2),
 (10, "Aros Argolla", "Aros Argolla Rose, Amarillo y Plateado con dije Cierre", 18000, "arosArgolla.jpg", 2)
 
 
