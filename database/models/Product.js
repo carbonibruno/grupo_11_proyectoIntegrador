@@ -38,9 +38,9 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Products = sequelize.define(alias, cols, config); 
 
-    /*
-    Actor.associate = function (models) {
-        Actor.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
+    /*asociacion  de productos con tipo de producto  
+    Products.associate = function (models) {
+        Products.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "movies",
             through: 'actor_movie',
             foreignKey: 'actor_id',

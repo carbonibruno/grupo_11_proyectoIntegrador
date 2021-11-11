@@ -55,7 +55,7 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Users = sequelize.define(alias, cols, config); 
 
-    /*
+    /* asociacion de usuario con admin o comun
     Actor.associate = function (models) {
         Actor.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "movies",
