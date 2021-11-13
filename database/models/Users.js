@@ -50,22 +50,19 @@ module.exports = (sequelize, dataTypes) => {
     let config = {
 
         tableName: "users", 
-        timestamps: true,
+        timestamps: false,
         
     }
     const Users = sequelize.define(alias, cols, config); 
 
-    /* asociacion de usuario con admin o comun
-    Actor.associate = function (models) {
-        Actor.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
-            as: "movies",
-            through: 'actor_movie',
-            foreignKey: 'actor_id',
-            otherKey: 'movie_id',
+    Users.associate = function (models) {
+        Users.belongsTo(models.Roles, { // models.Movie -> Movies es el valor de alias en movie.js
+            as: "roles",
+            foreignKey: "role_id",
             timestamps: false
         })
-    }*/
+    }    
 
     return Users
 
-};
+}

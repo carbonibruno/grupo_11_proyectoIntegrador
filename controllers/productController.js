@@ -13,10 +13,16 @@ let db = require('../database/models');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
+
 const productController = {
     
     prueba: (req,res) => {
-        res.render("pruebaDb") 
+    
+        db.Products.findAll()
+        .then(product => {
+            res.render('pruebaDb.ejs', {product: product})
+        })
+ 
     },    
 
     indexProductos: (req,res) => {
