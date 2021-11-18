@@ -19,19 +19,19 @@
                   
               <div class="tituloNuevaCuenta"> 
               <i class="fas fa-magic"></i>
-              <h3 id="h3CrearProducto">Estas editando: <%= productToEdit.name %> </h3>
+              <h3 id="h3CrearProducto">Estas editando: <%= product.name %> </h3>
               </div> 
               
               <div class="cuestionarioEditarProducto">
                 
-                <form id="formDatosPersonales" action="/productos/editar/<%= productToEdit.id %>" method="POST">
+                <form id="formDatosPersonales" action="/productos/editar/<%= product.id %>" method="POST">
                    
                     <div class="datosEditarProductos">
                     
                       <p><strong>Ingrese datos del producto:</strong></p><br> 
       
                         <label for="nombre">Nombre: </label><br>
-                        <input type="text" name="name" id="name" placeholder="Aros de oro" required>
+                        <input type="text" name="name" id="name" placeholder="<%= product.name %>" required>
                         <br>
                         <label for="apellido">Precio:</label><br>
                         <input type="text" name="price" id="price" placeholder="3000" required>

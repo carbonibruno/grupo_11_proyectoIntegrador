@@ -25,17 +25,17 @@
 
             <div class="listadoProductos">
 
-            <% productos.forEach(productos => { %>
+            <% product.forEach(product => { %>
              
            
                 <div class="articuloProductos">
                  
                   <div>
-                  <a href="/productos/detalle/<%= productos.id %> "> <img src="/img/<%= productos.image %>" alt=""> </a> 
+                  <a href="/productos/detalle/<%= product.id %> "> <img src="/img/<%= product.image %>" alt=""> </a> 
                   </div>
                    <div class="tituloPrecioProducto"> <!--  -->
-                     <h5><%= productos.name %> </h5>
-                     <h6><%= productos.price %> </h6>
+                     <h5><%= product.name %> </h5>
+                     <h6><%= product.price %> </h6>
                    </div> 
                  </div>
 

@@ -617,6 +617,7 @@ button{
 .crearProducto_container{
     width: 80%;
     background-color: #F8E6E3;
+
     display: flex;
     flex-wrap: wrap;
     flex: row;

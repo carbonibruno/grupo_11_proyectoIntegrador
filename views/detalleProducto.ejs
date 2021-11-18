@@ -17,7 +17,7 @@
           <div class="contenidoDetalle">
               
               <div class="fotoDetalle">
-                  <img src="/img/<%= producto.image %> " alt="">
+                  <img src="/img/<%= product.image %> " alt="">
               </div>
                   
               <div class="dataDetalle">
@@ -25,12 +25,12 @@
                 <div class="contenidoDetalleProducto">
 
                      <div class="tituloDetalleProducto">
-                      <h2><%= producto.name %> </h2> <br>
-                      <h4>$<%= producto.price %> </h4>
+                      <h2><%= product.name %> </h2> <br>
+                      <h4>$<%= product.price %> </h4>
                      </div>
 
                     <div class="descripcionDetalleProducto">
-                      <h4><strong>Descripcion:</strong> <br><%= producto.description %> </h4>
+                      <h4><strong>Descripcion:</strong> <br><%= product.description %> </h4>
                     </div>
 
                     <div class="talleDetalleProducto">
@@ -57,9 +57,9 @@
                  
                         <p>Administrador:</p>
                       
-                        <button class="botonAdminDetalleProducto" type="submit"><a href="/productos/editar/<%=producto.id %>">Modificar</a></button>
+                        <button class="botonAdminDetalleProducto" type="submit"><a href="/productos/editar/<%=product.id %>">Modificar</a></button>
                       
-                       <form action="/productos/delete/<%=producto.id %>?_method=DELETE" method="post"  > 
+                       <form action="/productos/delete/<%=product.id %>?_method=DELETE" method="post"  > 
                         <button class="botonAdminDetalleProducto" type="submit">Borrar</button>
                       </form> 
               

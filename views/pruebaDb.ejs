@@ -8,15 +8,15 @@
     <%- include('partials/header') %>
 
    
-     <% product.forEach(product => { %>
+    
+         <% category.forEach(category => { %>
           
-        <h1><%= product.name %> </h1> 
-        <h3><%= product.price %></h3>
-        <h3><%= product.description %></h3>
-        <img src="/img/<%= product.image %>" alt="">
-
-      
-         <% }) %>  
+            <h1><%= category.category %> </h1> 
+           
+    
+          
+             <% }) %>  
+       
 
 
 </body>

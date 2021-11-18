@@ -35,11 +35,23 @@
                         <label for="apellido">Precio:</label><br>
                         <input type="text" name="price" id="price" placeholder="3000" required>
                         <br>
+                        
                         <p>Seleccione Categoría:</p> <br>
-                        <label for="categoria">General</label>
+                        
+                        <label for="category">Categoria:</label>
+                        <select name="category_id">
+                          <% for (let i = 0; i < category.length; i++) { %>
+                          <option value="<%= category[i].id%>">
+                              <%= category[i].category%>
+                          </option>  
+                      
+                          <% } %>
+                        </select>
+
+                     <!--    <label for="categoria">General</label>
                         <input type="checkbox" name="category" id="general" value="general">
                         <label for="categoria">Destacado</label>
-                        <input type="checkbox" name="category" id="destacado" value="destacado">
+                        <input type="checkbox" name="category" id="destacado" value="destacado"> -->
                   
                     </div>
              
@@ -51,7 +63,7 @@
                       <input type="textarea" name="description" id="description" placeholder="Descripcion del Producto" required>
                       <br>
 
-                      <p>Seleccione talle:</p> <br>
+                     <!--  <p>Seleccione talle:</p> <br>
                       
                       <div class="seleccionTalle">
                       <label for="talle">S</label>
@@ -63,7 +75,7 @@
                       <label for="talle">Sin talle</label>
                       <input type="radio" name="talle" value="st"> 
                       </div>
-                      <br>
+                      <br> -->
 
                       <label for="image">Foto Producto</label><br>
                       <input type="file" name="image">

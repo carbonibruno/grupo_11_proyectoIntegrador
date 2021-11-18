@@ -17,24 +17,42 @@ const sequelize = db.sequelize;
 const productController = {
     
     prueba: (req,res) => {
-    
+        
+        db.Categories.findAll()
+        .then(category => {
+            res.render('pruebaDb.ejs', {category: category})
+        })
+        /*
         db.Products.findAll()
         .then(product => {
             res.render('pruebaDb.ejs', {product: product})
-        })
+        })*/
  
     },    
 
     indexProductos: (req,res) => {
-        res.render("listadoGeneralProducto", {productos: productos});
+        
+        db.Products.findAll()
+        .then(product => {
+            res.render('listadoGeneralProducto.ejs', {product: product})
+        })
+        
+        /*res.render("listadoGeneralProducto", {productos: productos})*/;
     }, 
 
     detalle: (req,res) => {
+       
+        db.Products.findByPk(req.params.id)
+            .then(product => {
+                res.render("detalleProducto", {product: product});
+            });
+      
+            /*
         const id = req.params.id;
 		const producto = productos.find(producto => {
 			return producto.id == id;
 		})
-        res.render("detalleProducto", {producto:producto});
+        res.render("detalleProducto", {producto:producto});*/
     }, 
 
     carritoProducto: (req,res) => {
@@ -43,13 +61,41 @@ const productController = {
     
     /*crear producto*/
     crear: (req,res) => {
-    res.render('crearProducto');    
+        /*let promGenres = Genres.findAll();
+        let promActors = Actors.findAll();
+        
+        Promise
+        .all([promGenres, promActors])
+        .then(([allGenres, allActors]) => {
+            return res.render(path.resolve(__dirname, '..', 'views',  'moviesAdd'), {allGenres,allActors})})
+        .catch(error => res.send(error))*/
+        db.Categories.findAll()
+        .then(category => {
+            res.render("crearProducto", {category: category});
+        })
+   
+    /*res.render('crearProducto');*/    
+    
     },
     
     /*guardar producto creado*/
     
     store: (req,res) => {
 
+        db.Products.create(
+            {
+                name: req.body.name,
+                price: req.body.price,
+                category_id: req.body.category_id,
+                description: req.body.description,
+                image: req.file
+            }
+        )
+        .then(()=> {
+            return res.redirect("/productos")})            
+        .catch(error => res.send(error))
+      
+        /*
         const newProduct = {
             id: productos[productos.length - 1].id + 1,
             name: req.body.name,
@@ -71,11 +117,25 @@ const productController = {
     
     editar: (req,res) => {
     
-        let id = req.params.id;
+        let productoId = req.params.id;
+
+        db.Products.findByPk(productoId,{include: ['categories']})
+        .then(product => {
+            res.render("editarProducto", {product: product});
+        });
+
+        /*Promise
+        .all([promMovies, promGenres, promActors])
+        .then(([Movie, allGenres, allActors]) => {
+            return res.render(path.resolve(__dirname, '..', 'views',  'moviesEdit'), {Movie,allGenres,allActors})})
+        .catch(error => res.send(error))*/
+        
+        /*
+        /*let id = req.params.id;
 		 
         let productToEdit = productos[id - 1];
 
-        res.render("editarProducto", {productToEdit: productToEdit});       
+        res.render("editarProducto", {productToEdit: productToEdit})*/       
     },
     
     /*actualizar producto existente*/
