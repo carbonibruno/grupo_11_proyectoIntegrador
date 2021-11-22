@@ -117,20 +117,18 @@ const productController = {
     
     editar: (req,res) => {
     
-        let productoId = req.params.id;
+        let productoAEditar = db.Products.findByPk(req.params.id);
+        console.log('productoAEditar')
+        let categoria = db.Categories.findAll();
+        console.log('categoria')
 
-        db.Products.findByPk(productoId,{include: ['categories']})
-        .then(product => {
-            res.render("editarProducto", {product: product});
-        });
-
-        /*Promise
-        .all([promMovies, promGenres, promActors])
-        .then(([Movie, allGenres, allActors]) => {
-            return res.render(path.resolve(__dirname, '..', 'views',  'moviesEdit'), {Movie,allGenres,allActors})})
-        .catch(error => res.send(error))*/
         
-        /*
+        Promise.all([productoAEditar, categoria])
+        .then(([product, category]) => {
+            res.render("editarProducto", {product: product, category: category});
+        })
+        .catch(error => console.log(error))
+       
         /*let id = req.params.id;
 		 
         let productToEdit = productos[id - 1];
@@ -142,6 +140,23 @@ const productController = {
 
     update: (req,res) => {
 
+        let productId = req.params.id;
+        
+        db.Products.update(
+            {
+                name: req.body.name,
+                price: req.body.price,
+                category_id: req.body.category_id,
+                description: req.body.description,
+                image: req.file
+            },
+            {
+                where: {id: productId}
+            })
+        .then(()=> {
+            return res.redirect('/productos')})            
+        .catch(error => res.send(error))
+       /*
         let id = req.params.id;
 
 		let productToEdit = productos[id - 1];
@@ -158,7 +173,7 @@ const productController = {
 
         /*productos[id -1] = productToEdit;*/
 
-        productos.forEach((producto, index) => {
+        /*productos.forEach((producto, index) => {
             if (producto.id == id){
                 productos[index] = productToEdit
             }
@@ -166,7 +181,7 @@ const productController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, " "));
 
-        res.redirect("/productos"); 
+        res.redirect("/productos");*/ 
     },
 
     destroy:  (req,res) => {
