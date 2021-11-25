@@ -57,7 +57,7 @@ const productController = {
 
     carritoProducto: (req,res) => {
         res.render("carritoProducto")
-        },
+    },
     
     /*crear producto*/
     crear: (req,res) => {
@@ -156,7 +156,8 @@ const productController = {
         .then(()=> {
             return res.redirect('/productos')})            
         .catch(error => res.send(error))
-       /*
+     
+        /*
         let id = req.params.id;
 
 		let productToEdit = productos[id - 1];
@@ -186,8 +187,15 @@ const productController = {
 
     destroy:  (req,res) => {
 
-        /*res.send("producto eliminado");*/
+        let productId = req.params.id;
+        db.Products.destroy({where: {id: productId}, force: true}) // force: true es para asegurar que se ejecute la acción
+            .then(()=>{
+                return res.redirect('/productos')})
+            .catch(error => res.send(error)) 
+     
+    /*res.send("producto eliminado");*/
     
+    /*    
     let id = req.params.id;
 
     let finalProductos = productos.filter(product => {
@@ -197,7 +205,7 @@ const productController = {
     fs.writeFileSync(productsFilePath, JSON.stringify(finalProductos, null, " "));
     
     res.redirect("/productos"); 
-    
+    */
     }
 }
      
