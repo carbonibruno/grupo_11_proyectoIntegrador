@@ -38,7 +38,7 @@ const usersController = {
         password: bcryptjs.hashSync(req.body.password, 10)
         /*falta avatar  avatar: req.file.filename*/
     
-      let password = bcryptjs.hashSync(req.body.password, 10);   
+    let password = bcryptjs.hashSync(req.body.password, 10);   
     
     db.Users.create(
         {
@@ -62,7 +62,38 @@ const usersController = {
     /*controlador para cuando entra un usuario existente*/
     loginProcess: (req,res) => {
 
-       let userToLogin = modeloUsuario.findByField('email', req.body.email); 
+       db.Users.findOne({
+        where: {
+          email: req.body.email,
+          deleted: 0,
+        },
+        })
+
+       .then(user =>{ 
+          
+          let userToLogin = user;
+
+          if(userToLogin){
+            let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            
+            if (isOkThePassword){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+   
+                if(req.body.remember_user){
+                    res.cookie('userEmail',req.body.email, {maxAge: (1000 * 60) *2})
+                }
+
+                return res.redirect('/')
+            }  
+
+            return res.send(userToLogin);
+          }
+       })
+       
+       
+        /*let userToLogin = db.Users.findByField('email', req.body.email); 
+
        
        if(userToLogin){
          let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
