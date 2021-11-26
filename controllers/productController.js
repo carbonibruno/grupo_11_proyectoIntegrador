@@ -18,9 +18,9 @@ const productController = {
     
     prueba: (req,res) => {
         
-        db.Categories.findAll()
-        .then(category => {
-            res.render('pruebaDb.ejs', {category: category})
+        db.Roles.findAll()
+        .then(rol => {
+            res.render('pruebaDb.ejs', {rol: rol })
         })
         /*
         db.Products.findAll()
