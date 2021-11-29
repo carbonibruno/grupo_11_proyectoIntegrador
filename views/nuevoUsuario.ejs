@@ -86,10 +86,10 @@
                       <p><strong>Ingrese sus datos personales:</strong></p><br> 
       
                         <label for="nombre">Nombre: *</label><br>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ej.: Juan" required>
+                        <input type="text" name="first_name" id="first_name" placeholder="Ej.: Juan" required>
                         <br>
                         <label for="apellido">Apellido: *</label><br>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ej.: Gomez" required>
+                        <input type="text" name="last_name" id="last_name" placeholder="Ej.: Gomez" required>
                         <br>
                         <label for="dni">Dni: </label><br>
                         <input type="text" name="dni" id="dni" placeholder="31925981">
@@ -101,14 +101,30 @@
                       <p><strong>Informacion de inicio de sesion:</strong></p><br>
 
                       <label for="email">Email: *</label><br>
-                        <input type="email" name="email" id="emailcuenta" placeholder="Ej.: Juan@mail.com" required>
+                        <input type="email" name="email" id="email" placeholder="Ej.: Juan@mail.com" required>
                         <br>
                         <label for="password">Password: *</label><br>
-                        <input type="password" name="password" id="passwordcuenta" placeholder="Ingrese password" required>
+                        <input type="password" name="password" id="password" placeholder="Ingrese password" required>
                         <br>
                        <!--  <label for="password">Confirmacion Password: *</label><br>
                         <input type="password" name="password" id="passwordcuenta" placeholder="Confirme su password"> -->
+
+                        <p>Seleccione Categoría:</p> <br>
+                        
+                        <label for="role_id">Rol</label>
+                        <select name="role_id">
+                          <% for (let i = 0; i < rol.length; i++) { %>
+                          <option value="<%= rol[i].id%>">
+                              <%= rol[i].role%>
+                          </option>  
+                      
+                          <% } %>
+                        </select>
+
+
                     </div>
+
+                   
                   
                     <button type="submit" id="botonNuevaCuenta">CREAR CUENTA</button>
               

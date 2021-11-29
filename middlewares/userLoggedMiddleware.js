@@ -1,4 +1,5 @@
 const modeloUsuario = (require('../models/modeloUsuario'))
+
 function userLoggedMiddleware(req,res,next){
     
     res.locals.isLogged = false;

@@ -27,7 +27,7 @@ module.exports = (sequelize, dataTypes) => {
         },
 
         email: {
-            type: dataTypes.STRING,
+            type: dataTypes.STRING(255),
             allowNull: false
         },
 
@@ -36,7 +36,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
 
-        delete: {
+        deleted: {
             type: dataTypes.TINYINT
         },
 

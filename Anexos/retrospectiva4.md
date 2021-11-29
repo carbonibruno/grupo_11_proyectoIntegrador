@@ -1,5 +1,10 @@
 # grupo_11_proyectoIntegrador
 
+
+
+
+
+
 Retrospectiva Sprint 4:
 
 Intentar ser mas ordenado

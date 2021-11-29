@@ -1,20 +1,26 @@
 
 Pendiente SPRINT 4 
-multer
+
+multer no anda
 menu desplegable por vista
 
 -Sprint 5
-- hacer boton recordar en vista acceso usuario
-- 
+ 
 -ver y agregar logout
--vista de administrador
+-vista de administrador (en agregar producto y nuevo usuario)
+-vista de perfil de usuario (crear vista donde se vean los datos y editen)
+-ver que pasa si el password no coincide en login
+-ver si la cookie esta bien cuando se loggea un usuario
 
 
 como poner a lo ultimo producto agregado?
 
 
+Pendientes diseño:
 
-
+- Banner entrada
+- Visual productos
+- Menus desplegable
 
 
 
