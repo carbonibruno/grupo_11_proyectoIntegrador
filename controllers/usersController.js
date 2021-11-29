@@ -74,6 +74,7 @@ const usersController = {
           let userToLogin = user;
 
           if(userToLogin){
+            
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             
             if (isOkThePassword){
