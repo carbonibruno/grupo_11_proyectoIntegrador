@@ -129,7 +129,13 @@ const usersController = {
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/')
+    },
+
+    perfil: (req,res) =>{
+       res.render("perfilUsuario")
+    
     }
+
        
 }
 

@@ -14,6 +14,9 @@ routerUsuarios.post('/acceso', usuariosController.loginProcess);
 routerUsuarios.get('/acceso/nuevoUsuario',guestMiddleware, usuariosController.nuevoUsuario);
 routerUsuarios.post('/acceso/nuevoUsuario', usuariosController.processRegister);
 
+/*acceso perfil usuario*/
+routerUsuarios.get('/acceso/perfil', usuariosController.perfil);
+
 /*logout*/
 router.get('/logout/', usersController.logout)
 

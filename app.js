@@ -39,6 +39,7 @@ app.use('/productos', productController);
 app.use('/usuarios', usuariosController);
 
 
+
 app.listen(4000, () => {
     console.log("App listening on port http://localhost:4000/");
 });
