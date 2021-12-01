@@ -70,7 +70,8 @@ const usersController = {
     /*controlador para cuando entra un usuario existente*/
     loginProcess: (req,res) => {
 
-       db.Users.findOne({
+      
+        db.Users.findOne({
         where: {
           email: req.body.email,
           deleted: 0,

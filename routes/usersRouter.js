@@ -25,9 +25,18 @@ const validations = [
      .isLength({min:2}).withMessage('El minimo del password son 8 caracteres').bail(),
 ]
 
+const logginValidation = [
+   body('email')
+    .notEmpty().withMessage('Debes completar el campo de email')
+    .isEmail().withMessage('Debes completar el campo con un email válido').bail(),
+   body('password')
+    .notEmpty().withMessage('Debes completar el campo de contraseña').bail()
+
+]
+
 /*acceso login usuario*/
 routerUsuarios.get('/acceso', guestMiddleware, usuariosController.acceso);
-routerUsuarios.post('/acceso', usuariosController.loginProcess);
+routerUsuarios.post('/acceso', logginValidation, usuariosController.loginProcess);
 
 /*acceso nuevo usuario*/
 routerUsuarios.get('/acceso/nuevoUsuario',guestMiddleware, usuariosController.nuevoUsuario);
