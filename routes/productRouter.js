@@ -5,6 +5,21 @@ const multer = require('multer');
 
 const productController = require('../controllers/productController');
 
+const { body }  = require('express-validator');
+
+const validations = [
+    
+    body("name")
+     .notEmpty().withMessage('Ingrese un nombre del producto').bail()
+     .isLength({min:5}).withMessage('Su nombre tener mas de 5 caracteres').bail(),
+    body('price')
+     .notEmpty().withMessage('Ingrese un valor').bail(),
+    body('description')
+     .notEmpty().withMessage('Ingrese una descripcion').bail()
+     .isLength({min:20}).withMessage('La descripcion debe tener como minimo 20 caracteres').bail(),
+   /* falta imagen*/
+]
+
 /*multer*/
 /*
 const storage = multer.diskStorage({ 
@@ -54,7 +69,7 @@ routerProductos.get('/carritoProducto', productController.carritoProducto);
 
 /*creacion*/
 routerProductos.get('/crear', productController.crear);
-routerProductos.post('/crear', upload.single("image"), productController.store); 
+routerProductos.post('/crear', upload.single("image"), validations, productController.store); 
 
 
 /*edicion*/

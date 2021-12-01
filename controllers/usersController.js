@@ -26,6 +26,7 @@ const usersController = {
     },
 
     /*crear usuario*/
+   
     processRegister: (req,res) =>{
     
         /*let userInDB = modeloUsuario.findByField('email', req.body.email);

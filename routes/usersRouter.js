@@ -10,6 +10,7 @@ const usersController = require('../controllers/usersController');
 const { body }  = require('express-validator');
 
 const validations = [
+    
     body("first_name")
      .notEmpty().withMessage('Ingrese su nombre').bail()
      .isLength({min:2}).withMessage('Su nombre tener mas de dos caracteres').bail(),

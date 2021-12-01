@@ -13,6 +13,8 @@ let db = require('../database/models');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
+const { validationResult } = require('express-validator');
+
 
 const productController = {
     
@@ -82,6 +84,17 @@ const productController = {
     
     store: (req,res) => {
 
+        let resultValidation = validationResult(req);
+
+        if(resultValidation.errors.length > 0){
+           
+            db.Categories.findAll()
+            .then(category => {
+             return res.render("crearProducto", {errors: resultValidation.mapped(), oldData: req.body, category: category});
+             
+         }) } else {
+
+
         db.Products.create(
             {
                 name: req.body.name,
@@ -94,7 +107,7 @@ const productController = {
         .then(()=> {
             return res.redirect("/productos")})            
         .catch(error => res.send(error))
-      
+         }
         /*
         const newProduct = {
             id: productos[productos.length - 1].id + 1,
