@@ -21,9 +21,3 @@ Pendientes diseño:
 - Banner entrada
 - Visual productos
 - Menus desplegable
-
-
-
-
-
-

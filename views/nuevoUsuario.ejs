@@ -78,19 +78,39 @@
               </div> 
               
               <div class="cuestionarioNuevaCuenta">
-                
+               
+              <!--   <% if (locals.errors) { %>
+                  <% for( let oneError in errors ) { %>
+                     <p><%= errors[oneError].msg %></p>
+                  <% } %>
+                  
+              <% } %> -->
                 <form id="formDatosPersonales" action="/" method="post">
                    
                     <div class="datosPersonalesCuestionario">
+
+                    
                     
                       <p><strong>Ingrese sus datos personales:</strong></p><br> 
       
                         <label for="nombre">Nombre: *</label><br>
-                        <input type="text" name="first_name" id="first_name" placeholder="Ej.: Juan" required>
-                        <br>
+                        <input type="text" name="first_name" id="first_name" placeholder="Ej.: Juan">
+                        
+                        <% if (locals.errors && errors.first_name) { %>
+                           <div class="text-danger">
+                             <%= errors.first_name.msg %>
+                           </div>
+                        <% } %>
+
                         <label for="apellido">Apellido: *</label><br>
-                        <input type="text" name="last_name" id="last_name" placeholder="Ej.: Gomez" required>
-                        <br>
+                        <input type="text" name="last_name" id="last_name" placeholder="Ej.: Gomez">
+                        
+                        <% if (locals.errors && errors.last_name) { %>
+                          <div class="text-danger">
+                            <%= errors.last_name.msg %>
+                          </div>
+                       <% } %>
+
                         <label for="dni">Dni: </label><br>
                         <input type="text" name="dni" id="dni" placeholder="31925981">
                   
@@ -100,12 +120,25 @@
 
                       <p><strong>Informacion de inicio de sesion:</strong></p><br>
 
+                      
+
                       <label for="email">Email: *</label><br>
-                        <input type="email" name="email" id="email" placeholder="Ej.: Juan@mail.com" required>
-                        <br>
+                        <input type="email" name="email" id="email" placeholder="Ej.: Juan@mail.com">
+                        
+                        <% if (locals.errors && errors.email) { %>
+                          <div class="text-danger">
+                            <%= errors.email.msg %>
+                          </div>
+                       <% } %>  
                         <label for="password">Password: *</label><br>
-                        <input type="password" name="password" id="password" placeholder="Ingrese password" required>
-                        <br>
+                        <input type="password" name="password" id="password" placeholder="Ingrese password">
+                         
+                        <% if (locals.errors && errors.password) { %>
+                          <div class="text-danger">
+                            <%= errors.password.msg %>
+                          </div>
+                       <% } %> 
+
                        <!--  <label for="password">Confirmacion Password: *</label><br>
                         <input type="password" name="password" id="passwordcuenta" placeholder="Confirme su password"> -->
 
@@ -132,6 +165,7 @@
 
               </div>
        </section>     
+       
        <section class="envios">
            
                 <div class="containerEnvios">

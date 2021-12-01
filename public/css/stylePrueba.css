@@ -536,6 +536,11 @@ button{
     margin-bottom: 2%;
 }
 
+.text-danger{
+    font-size: 12px;
+    color:red;
+}
+
 .nuevaCuenta_contenido{
     width: 90%;
     margin: auto;
@@ -608,6 +613,10 @@ button{
 }
 
 /*fin nuevo usuario*/
+
+/* inicio*/
+
+
 /*inicio crear producto */
 
 .crearProducto{
