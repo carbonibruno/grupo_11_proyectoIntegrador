@@ -132,7 +132,7 @@ const usersController = {
     },
 
     perfil: (req,res) =>{
-       res.render("perfilUsuario")
+       res.render("perfilUsuario.ejs")
     
     }
 

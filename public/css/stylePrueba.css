@@ -608,6 +608,43 @@ button{
 }
 
 /*fin nuevo usuario*/
+
+/*D inicio perfil usuario*/
+
+
+#h3CuestionarioD{
+    
+    margin-top: 0px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cuestionarioD{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3%;
+    
+       
+}
+
+.tituloCuestionario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;  
+    width: 100%;
+    margin-left: 0%;
+    margin: auto;
+    margin-top: 8%;
+  
+}
+
+
+/*D fin perfil usuario*/
+
+
 /*inicio crear producto */
 
 .crearProducto{
