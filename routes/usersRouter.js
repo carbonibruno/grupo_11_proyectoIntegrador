@@ -10,10 +10,18 @@ const usersController = require('../controllers/usersController');
 const { body }  = require('express-validator');
 
 const validations = [
-    body("first_name").notEmpty().withMessage('Ingrese su nombre'),
-    body('last_name').notEmpty().withMessage('Ingrese su apellido'),
-    body('email').notEmpty().withMessage('Ingrese un mail valido'),
-    body('password').notEmpty().withMessage('El minimo del password son 8 caracteres'),
+    body("first_name")
+     .notEmpty().withMessage('Ingrese su nombre').bail()
+     .isLength({min:2}).withMessage('Su nombre tener mas de dos caracteres').bail(),
+    body('last_name')
+     .notEmpty().withMessage('Ingrese su apellido')
+     .isLength({min:2}).withMessage('Su nombre tener mas de dos caracteres').bail(),
+    body('email')
+     .notEmpty().withMessage('Ingrese un mail valido').bail()
+     .isEmail().withMessage('Ingrese un formato de email').bail(),
+    body('password')
+     .notEmpty().withMessage('Ingrese un password').bail()
+     .isLength({min:2}).withMessage('El minimo del password son 8 caracteres').bail(),
 ]
 
 /*acceso login usuario*/

@@ -43,7 +43,7 @@ const usersController = {
            
            db.Roles.findAll()
            .then(rol => {
-            return res.render("nuevoUsuario", {errors: resultValidation.mapped(), rol: rol});
+            return res.render("nuevoUsuario", {errors: resultValidation.mapped(), oldData: req.body, rol: rol});
         }) } else {
 
         db.Users.create(
@@ -139,11 +139,7 @@ const usersController = {
     },
 
     perfil: (req,res) =>{
-<<<<<<< HEAD
-       res.render("perfilUsuario");
-=======
        res.render("perfilUsuario.ejs")
->>>>>>> 708ee206ccc6905cfc79a075058612b71931eb42
     
     }
     
