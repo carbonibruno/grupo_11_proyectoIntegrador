@@ -5,6 +5,8 @@ const bcryptjs = require('bcryptjs');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
+const { validationResult } = require('express-validator');
+
 
 const usersController = {
     
@@ -14,8 +16,8 @@ const usersController = {
     
     /*va a la vista de nuevo usuario*/
     nuevoUsuario: (req,res) => {
-        /*res.cookie('testing', "hola", {maxAge: 1000 * 30});*/
-        
+       
+        /*res.cookie('testing', "hola", {maxAge: 1000 * 30});*/     
         db.Roles.findAll()
         .then(rol => {
             res.render("nuevoUsuario", {rol: rol});
@@ -26,38 +28,43 @@ const usersController = {
     /*crear usuario*/
     processRegister: (req,res) =>{
     
-    let userInDB = modeloUsuario.findByField('email', req.body.email);
-    
-    /*aca va la validacion del mail para no repertir usuario minuto49
-    if (userInDB){
+        /*let userInDB = modeloUsuario.findByField('email', req.body.email);
         
-    }
-    */
-    /*let userToCreate = {
-        ...req.body,
-        password: bcryptjs.hashSync(req.body.password, 10)
-        /*falta avatar  avatar: req.file.filename*/
-    
-    let password = bcryptjs.hashSync(req.body.password, 10);   
-    
-    db.Users.create(
-        {
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            dni:req.body.dni,
-            password: password,
-            email: req.body.email,
-            role_id: req.body.role_id          
+        /*aca va la validacion del mail para no repertir usuario minuto49
+        if (userInDB){
+            
         }
-    )
-    .then(()=> {
-        return res.redirect("/usuarios/acceso")})            
-    .catch(error => res.send(error))
-    
-    /*modeloUsuario.create(userToCreate);    
-    
-    res.redirect('/usuarios/acceso');*/
-    }, 
+        */
+        let password = bcryptjs.hashSync(req.body.password, 10);   
+        
+        let resultValidation = validationResult(req);
+         
+        if(resultValidation.errors.length > 0){
+           
+           db.Roles.findAll()
+           .then(rol => {
+            return res.render("nuevoUsuario", {errors: resultValidation.mapped(), rol: rol});
+        }) } else {
+
+        db.Users.create(
+            {
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                dni:req.body.dni,
+                password: password,
+                email: req.body.email,
+                role_id: req.body.role_id          
+            }
+        )
+        .then(()=> {
+            return res.redirect("/usuarios/acceso")})            
+        .catch(error => res.send(error))
+        
+        }
+        /*modeloUsuario.create(userToCreate);    
+        
+        res.redirect('/usuarios/acceso');*/
+        }, 
     
     /*controlador para cuando entra un usuario existente*/
     loginProcess: (req,res) => {
@@ -70,7 +77,7 @@ const usersController = {
         })
 
        .then(user =>{ 
-          
+                    
           let userToLogin = user;
 
           if(userToLogin){
@@ -132,9 +139,10 @@ const usersController = {
     },
 
     perfil: (req,res) =>{
-       res.render("perfilUsuario")
+       res.render("perfilUsuario");
     
     }
+    
 
        
 }
