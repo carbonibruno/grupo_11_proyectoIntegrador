@@ -614,7 +614,44 @@ button{
 
 /*fin nuevo usuario*/
 
+<<<<<<< HEAD
 /* inicio*/
+=======
+/*D inicio perfil usuario*/
+
+
+#h3CuestionarioD{
+    
+    margin-top: 0px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cuestionarioD{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3%;
+    
+       
+}
+
+.tituloCuestionario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;  
+    width: 100%;
+    margin-left: 0%;
+    margin: auto;
+    margin-top: 8%;
+  
+}
+
+
+/*D fin perfil usuario*/
+>>>>>>> 708ee206ccc6905cfc79a075058612b71931eb42
 
 
 /*inicio crear producto */

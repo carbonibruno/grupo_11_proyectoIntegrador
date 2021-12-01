@@ -1,8 +1,20 @@
 # grupo_11_proyectoIntegrador
 
+TRELLO (tablero de trabajo): https://trello.com/b/2N9w6ojP/digitalgrupo11
+
+Retrospectiva Sprint 5:
+
+26/10 se incorpora Daniela Goyetche al equipo: ¡Bienvenida!
+
+Lo bueno a destacar es que siempre se avanzó en el proyecto.
+Quedan pocos pendientes a realizar.
+Se trabajó mas en equipo. 
+Todo lo que falta en cuanto al proyecto está detallada en agenda.txt
 
 
 
+
+*****************************************
 
 
 Retrospectiva Sprint 4:
@@ -13,14 +25,19 @@ Trabajar mas en equipo
 Resumen final Sprint 4:
 Falta hacer funcionar multer, solucionas updates de productos, y probar eliminacion de productos. 
 
+
+*************************************************
+
+
 Grupo 11:
 
 Integrantes:
 
+Mariano Salperin
 Bruno Carboni
 Lucas Haber
 Pedro Lantaron
-Mariano Salperin
+
 
 Tematica:
 
