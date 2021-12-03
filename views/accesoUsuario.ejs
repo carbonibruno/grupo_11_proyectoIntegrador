@@ -38,10 +38,23 @@
 
                <label for="email">Correo Electronico:</label><br>
                <input type="email" name="email" id="email" placeholder="Ej.:nombre@mail.com">
+
+               <% if (locals.errors && errors.email) { %>
+                <div class="text-danger">
+                  <%= errors.email.msg %>
+                </div>
+               <% } %>  
                <br>   
 
                <label for="password">Ingrese su contraseña:</label><br>
                <input type="password" name="password" id="password"placeholder="Ingrese su contraseña">
+               
+               <% if (locals.errors && errors.password) { %>
+                <div class="text-danger">
+                  <%= errors.password.msg %>
+                </div>
+               <% } %> 
+               
                <br>
                
                <label for="recordar"> 
