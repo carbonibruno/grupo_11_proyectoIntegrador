@@ -2,6 +2,22 @@
 
 TRELLO (tablero de trabajo): https://trello.com/b/2N9w6ojP/digitalgrupo11
 
+*********************************************
+
+Retrospectiva Sprint 6:
+
+¡Estamos mas cerca de la entrega final!
+
+Quedan pendientes a realizar.
+Se trabajó en equipo aprovechando las 2 clases en vivo del curso donde separaron el zoom por proyectos , sumado a otras reuniones.
+A seguir en contacto.
+Sumar reuniones ya que estamos en la recta final y proponer objetivos de fechas a cumplir para lograr las metas.
+
+¡Vamos grupo 11!
+
+
+******************************************
+
 Retrospectiva Sprint 5:
 
 26/10 se incorpora Daniela Goyetche al equipo: ¡Bienvenida!
@@ -10,7 +26,6 @@ Lo bueno a destacar es que siempre se avanzó en el proyecto.
 Quedan pocos pendientes a realizar.
 Se trabajó mas en equipo. 
 Todo lo que falta en cuanto al proyecto está detallada en agenda.txt
-
 
 
 
