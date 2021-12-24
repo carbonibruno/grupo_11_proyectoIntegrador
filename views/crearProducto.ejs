@@ -23,14 +23,20 @@
               
               <div class="cuestionarioCrearProducto">
                 
-                <form action="/productos/crear" id="formularioCrearProducto" method="POST" enctype="multipart/form-data">
+                <form action="/productos/crear" class="formProducto" method="POST" enctype="multipart/form-data">
                    
                     <div class="datosProductos">
                     
                       <p><strong>Ingrese los datos del Producto:</strong></p><br> 
+
+                        <div class="errores text-danger"></div>
       
                         <label for="nombre">Nombre: </label><br>
                         <input type="text" name="name" id="name" placeholder="Aros de oro" value= "<%= locals.oldData ? oldData.name : null %>">
+                        
+                        <div class="errorFront text-danger">
+                
+                        </div>
 
                         <% if (locals.errors && errors.name) { %>
                           <div class="text-danger">
@@ -85,19 +91,6 @@
 
                       <br>
 
-                     <!--  <p>Seleccione talle:</p> <br>
-                      
-                      <div class="seleccionTalle">
-                      <label for="talle">S</label>
-                      <input type="radio" name="talle" value="s">
-                      <label for="talle">M</label>
-                      <input type="radio" name="talle" value="m">
-                      <label for="talle">L</label>
-                      <input type="radio" name="talle" value="l">
-                      <label for="talle">Sin talle</label>
-                      <input type="radio" name="talle" value="st"> 
-                      </div>
-                      <br> -->
 
                       <label for="image">Foto Producto</label><br>
                       <input type="file" name="image">
@@ -111,8 +104,10 @@
 
        </section>     
     
-
+     
     <%- include('partials/footer') %> 
+
+    <script src="/js/crearProductoFront.js"></script>   
      
 </body>
 
