@@ -92,6 +92,8 @@
                     
                     
                       <p><strong>Ingrese sus datos personales:</strong></p><br> 
+
+                      <div class="errores text-danger"></div>
       
                         <label for="nombre">Nombre: *</label><br>
                         <input type="text" name="first_name" id="first_name" placeholder="Ej.: Juan" value= "<%= locals.oldData ? oldData.first_name : null %>">
@@ -206,5 +208,8 @@
     <footer>
 
     </footer>
+
+    <script src="/js/nuevoUsuarioFront.js"></script>
+
 </body>
 </html>
