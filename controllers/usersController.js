@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 const modeloUsuario = require('../models/modeloUsuario'); 
 const bcryptjs = require('bcryptjs');
 
@@ -19,6 +20,7 @@ const usersController = {
     nuevoUsuario: (req,res) => {
        
         /*res.cookie('testing', "hola", {maxAge: 1000 * 30});*/     
+
         db.Roles.findAll()
         .then(rol => {
             res.render("nuevoUsuario", {rol: rol});
