@@ -34,14 +34,16 @@ const mainRouter = require('./routes/mainRouter');
 const productController = require('./routes/productRouter.js');
 const usuariosController = require('./routes/usersRouter');
 
-const apiUsuariosRouter= require('./routes/api/apiUserRouter');
+const apiUsuariosRouter= require('./routes/api/apiUserRouter')
+const apiProductRouter= require('./routes/api/apiProductRouter');
 
 
 app.use('/', mainRouter);
 app.use('/productos', productController);
 app.use('/usuarios', usuariosController);
 
-app.use('/api', apiUsuariosRouter);
+app.use('/api/users', apiUsuariosRouter);
+app.use('/api/products', apiProductRouter);
 
 
 app.listen(4000, () => {
