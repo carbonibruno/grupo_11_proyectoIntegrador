@@ -5,13 +5,21 @@
     </div>
     
     <nav>
-      
         
       <div class="listaMenu">
             <ul>
-                <a href="/productos"> <li>New In</li></a>
+                <a href="/productos"> <li>New In</li></a>    
               
-                <a href="/productos"><li>Colecciones</li></a>
+              <div class="dropdown-header">  
+                <a href="/productos"><li>Colecciones </li> </a>
+                    <ul class="dropdown-header-content items-menu">
+                        <a href="/productos"> <li>Collares</li></a>
+                        <a href="/productos"><li>Aros</li></a>
+                        <a href="/productos"><li>Pulsera</li></a>
+                        <a href="/productos"><li>Anillos</li></a>
+                    </ul>
+              </div>
+           
                 <a href="/productos"><li>Lifestyle</li></a>
                 <a href="/productos"><li>Sale</li></a>
             </ul>
@@ -28,10 +36,17 @@
             </div>   
             
             <div class="submit"><i class="fa fa-search"></i></div>                
+        
         </div>
 
         <% if(locals.isLogged) {%>
-              <p>Hola <%= locals.userLogged.first_name %>  </p>
+            <div class="dropdown-header">
+              <p>Hola <%= locals.userLogged.first_name %></p>
+              <ul class="dropdown-header-content">
+                  <li>Perfil</li>
+                  <li>Log Out</li>
+              </ul>
+            </div>
         <% } %>
 
         <div class="accesoUsuario">
