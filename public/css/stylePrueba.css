@@ -157,7 +157,7 @@ header nav ul li{
 .dropdown-header-content{
     display: none;
     position: absolute;
-    background-color: #F8E6E3;
+    background-color: seashell;
     min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 8px 16px;
@@ -175,8 +175,25 @@ header nav ul li{
   text-align: center;
 }
 
+.dropdown-burger{
+    min-width: 120px;
+    border: 1px solid #563440ff;
+    position: absolute;
+    right: 0.5px;
+    text-align: center;
+   
+
+}
+.dropdown-burger li {
+    font-size: 14px;
+    text-align: left;
+}
 .dropdown-header:hover .dropdown-header-content {
     display: block;
+}
+
+.item-burger-menu {
+    display: none;
 }
 
 /*finheader*/
@@ -1389,8 +1406,8 @@ header .logo{
     
     nav {
         width: 25%;
-        margin-left: 23%;
-        
+        margin-left: 30%;
+    
         /*justify-content: flex-end;*/
     
     }
@@ -1419,12 +1436,31 @@ header .logo{
      
     .fa-user{
        font-size: 25px;
-       margin-left: 20%;      
+       margin-left: 20%;
+       display: none;      
+    }
+
+    .item-burger-menu {
+        display: flex;
+
+    }
+    .dropdown-burger{
+        background-color: seashell;
+        min-width: 135px;
+        text-align: center;
+        border: 1px dotted;
+    }
+   
+    .dropdown-burger li{
+       
+      
+        text-align: center;
     }
     
     .fa-shopping-cart{
        font-size: 25px;
-       margin-left: 10%;    
+       margin-left: 15%; 
+      
     }
     
     
