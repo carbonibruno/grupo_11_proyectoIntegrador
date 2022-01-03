@@ -23,4 +23,14 @@ Pendientes diseño:
 - Menus desplegable
 
 
--header: poner if user log en burger y el destroy session(log out)
+-react
+
+-header: poner if user log en burger y el destroy session!(log out)
+
+-Ver UsegLogged
+-vista administrador en producto ver UsegLogged
+-Destroy session
+
+
+
+-slider
