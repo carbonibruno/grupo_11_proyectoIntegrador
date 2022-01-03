@@ -1242,6 +1242,9 @@ header .logo{
     display: inline-block;
 }
 
+.usuario_logueado_burger{
+    display: none;
+}
 
 /*iconos envios*/
 
@@ -1469,12 +1472,16 @@ header .logo{
         font-size: 25px;
         margin-left: 35%;
     }
+
+    .usuario_logueado{
+        display: none;
+    }
     
     /*header celular*/ 
     
     /*banner*/
     
-    
+
     /*relacionados*/
         
         .articulosRelacionados{

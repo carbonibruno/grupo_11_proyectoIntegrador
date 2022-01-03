@@ -40,8 +40,8 @@
         </div>
 
         <% if(locals.isLogged) {%>
-            <div class="dropdown-header">
-              <p>Hola <%= locals.userLogged.first_name %></p>
+            <div class="dropdown-header usuario_logueado">
+              <p class="nombre-usuario">Hola <%= locals.userLogged.first_name %></p>
               <ul class="dropdown-header-content">
                   <li>Perfil</li>
                   <li>Log Out</li>
@@ -61,10 +61,17 @@
 
           <div class="dropdown-header">
             <i class="fas fa-bars"></i>
+            
             <ul class="dropdown-header-content dropdown-burger">
                 <a href="/productos"><li>Productos</li></a>
+                
+              <% if(locals.isLogged) { %>
+                  <li class="usuario_logueado_burger">Hola <%= locals.userLogged.first_name %> - Tu perfil</li>
+              <% } else { %>
                 <a href="/usuarios/acceso"><li class="item-burger-menu">Acceso Usuario</li></a>
-            
+              <%  } %>
+              
+              <!-- <a href="/usuarios/acceso"><li class="item-burger-menu">Acceso Usuario</li></a> -->
             </ul>
           </div>
 
