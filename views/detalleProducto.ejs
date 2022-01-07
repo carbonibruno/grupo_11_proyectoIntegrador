@@ -52,9 +52,10 @@
                       </form>
                     </div>
 
+                    <% if (locals.userLogged.role_id == 2) { %>
+
                     <div class="botonesAdministradorDetalleProducto">
-                      
-                 
+                    
                         <p>Administrador:</p>
                       
                         <button class="botonAdminDetalleProducto" type="submit"><a href="/productos/editar/<%=product.id %>">Modificar</a></button>
@@ -64,6 +65,8 @@
                       </form> 
               
                     </div>
+
+                    <% } %>
 
                     
 

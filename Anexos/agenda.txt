@@ -23,14 +23,26 @@ Pendientes diseño:
 - Menus desplegable
 
 
--react
+-react OK
 
--header: poner if user log en burger y el destroy session!(log out)
+-fetch por id OK
+
+
 
 -Ver UsegLogged
 -vista administrador en producto ver UsegLogged
 -Destroy session
 
-
+-Vista perfil usuario mariano1234 mariano@hotmail.com
 
 -slider
+
+-buscador en header
+
+-Multer
+
+
+-filtros en producto
+-cart
+
+

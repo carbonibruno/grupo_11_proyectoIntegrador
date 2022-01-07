@@ -8,10 +8,12 @@
 
 </head>
 <body>
+   
     <%- include('partials/header') %>
 
 
     <main>
+
         <section class="login">
            
         <div class="login_container">
@@ -22,14 +24,19 @@
                
                <div class="tituloCuestionarioD"> 
                 
-                <h3 id="h3CuestionarioD">Datos usuario</h3>
-               </div> 
-    
-               <p></p> <br>
+                <h3 id="h3CuestionarioD titulo_home">Datos usuario</h3>
 
-               <label for="nombre">Nombre y Apellido:</label><br>
+                <br>
 
-               <p>Mail:</p> <br>
+               <h4>Nombre: <%= locals.userLogged.first_name %></h4> 
+
+               <br>
+
+               <h4>Apellido: <%= locals.userLogged.last_name %></h4> 
+
+               <br>
+
+               <h4>Mail: <%= locals.userLogged.email %></h4>
     
              
     
@@ -56,6 +63,8 @@
 
 
     <%- include('partials/envios') %> 
+
+    <%- include('partials/footer') %> 
 
 
 

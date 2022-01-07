@@ -19,9 +19,10 @@ const apiUsersController = {
          newArray.forEach((user) => {
              delete user.password;
              delete user.roleId;
-             user.detailUrl = 'http://localhost:3500/api/${user.id}'
+             user.detailUrl = 'http://localhost:4000/api/'+ user.id
          })
 
+    
          return res.status(200).json({
              total: usersInDb.length,
              data: newArray,

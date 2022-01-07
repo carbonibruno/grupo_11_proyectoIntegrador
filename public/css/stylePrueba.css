@@ -63,7 +63,10 @@ header .logo{
     width: 100%;
     
 }
-
+a .img_articulos{
+    width: 100%;
+    margin-bottom: 0px;
+} 
 
 nav {
     display: flex;
@@ -294,8 +297,9 @@ article{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;   
-    position: relative;
+    flex-direction: row;
+    margin-top: 0%;   
+
 }
 
 .itemColeccion img {
@@ -480,8 +484,7 @@ button{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 3%;
-    
-       
+           
 }
 
 .tituloCuestionario{
@@ -877,7 +880,6 @@ button{
 }
 .filtroProductos{
     width: 20%;;
-     
     margin-top: 1%; 
 }
 
@@ -895,6 +897,8 @@ button{
     margin-right: 2%;
     margin-left: 2%;
     margin-top: 2%;
+    box-shadow: 8px 3px 3px grey
+   
 }
 
 
@@ -904,14 +908,15 @@ button{
 }*/
 .articuloProductos img{
     width: 100%;
-    
+    margin-bottom: 0%;
 }
 
 .tituloPrecioProducto{
     text-align: center;
     background-color: #f8e6e3ff;
-    padding: 5px;
+    padding: 5px; 
     width: 100%;
+    margin-top: 0px;
 }
 
 /*fin listado general de productos/*
@@ -1466,6 +1471,11 @@ header .logo{
     .usuario_logueado{
         display: none;
     }
+
+    .usuario_logueado_burger{
+        display: inline-block;
+    }
+    
     
     /*header celular*/ 
     

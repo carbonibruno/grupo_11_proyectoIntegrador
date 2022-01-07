@@ -14,9 +14,8 @@ const apiUsersController = {
              return product.dataValues;
          })
 
-         newArray.forEach((product) => {
-           
-             product.detailUrl = 'http://localhost:3500/api/'
+         newArray.forEach((product) => {           
+             product.detailUrl = 'http://localhost:4000/productos/detalle/' + product.id
          })
 
          return res.status(200).json({

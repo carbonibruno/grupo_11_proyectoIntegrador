@@ -5,13 +5,15 @@ const app = express ();
 const path = require ("path");
 const methodOverride = require('method-override');
 const cookies = require('cookie-parser');
-
+const cors = require('cors')
 /*si un usuario esta logeado*/
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 
 app.set("view engine", "ejs");
 
 const publicPath = path.resolve(__dirname, "./public");
+
+app.use(cors())
 app.use (express.static(publicPath));
 
 app.use(express.urlencoded({ extended: false }));

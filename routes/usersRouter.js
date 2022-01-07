@@ -47,6 +47,6 @@ routerUsuarios.post('/acceso/nuevoUsuario', validations , usuariosController.pro
 routerUsuarios.get('/acceso/perfil', usuariosController.perfil);
 
 /*logout*/
-router.get('/logout/', usersController.logout)
+routerUsuarios.get('/logout/', usersController.logout)
 
 module.exports = routerUsuarios;

@@ -17,9 +17,7 @@ const usersController = {
     
     /*va a la vista de nuevo usuario*/
     
-    nuevoUsuario: (req,res) => {
-       
-        /*res.cookie('testing', "hola", {maxAge: 1000 * 30});*/     
+    nuevoUsuario: (req,res) => {  
 
         db.Roles.findAll()
         .then(rol => {
@@ -104,6 +102,7 @@ const usersController = {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             
             if (isOkThePassword){
+
                 delete userToLogin.password;
                 
                 req.session.userLogged = userToLogin;
@@ -140,7 +139,8 @@ const usersController = {
     },
 
     perfil: (req,res) =>{
-       res.render("perfilUsuario.ejs")
+     
+       res.render("perfilUsuario.ejs", )
     
     }
     

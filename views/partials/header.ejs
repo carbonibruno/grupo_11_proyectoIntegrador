@@ -43,8 +43,8 @@
             <div class="dropdown-header usuario_logueado">
               <p class="nombre-usuario">Hola <%= locals.userLogged.first_name %></p>
               <ul class="dropdown-header-content">
-                  <li>Perfil</li>
-                  <li>Log Out</li>
+                  <a  href="/usuarios/acceso/perfil"><li>Perfil</li></a>
+                  <a  href="/usuarios/logout/"> <li>Log Out</li></a>
               </ul>
             </div>
         <% } %>
@@ -66,6 +66,7 @@
                 <a href="/productos"><li>Productos</li></a>
                 
               <% if(locals.isLogged) { %>
+                  <%= console.log(locals.userLogged)  %> 
                   <li class="usuario_logueado_burger">Hola <%= locals.userLogged.first_name %> - Tu perfil</li>
               <% } else { %>
                 <a href="/usuarios/acceso"><li class="item-burger-menu">Acceso Usuario</li></a>
