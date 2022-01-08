@@ -27,22 +27,20 @@ Pendientes diseño:
 
 -fetch por id OK
 
-
-
 -Ver UsegLogged
--vista administrador en producto ver UsegLogged
--Destroy session
+-vista administrador en producto ver UsegLogged OK
+-Destroy session OK
 
--Vista perfil usuario mariano1234 mariano@hotmail.com
+-Vista perfil usuario mariano1234 mariano@hotmail.com OK
 
 -slider
 
 -buscador en header
+-filtros en producto
 
 -Multer
 
 
--filtros en producto
 -cart
 
 

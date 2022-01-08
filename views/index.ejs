@@ -24,7 +24,32 @@
 
     <section class="banner">
         
-        <img src="img/aros_banner.JPG" alt="">
+        <div class="container_banner">
+
+           <div class="slider-home">
+
+            <ul>
+              <li id="slide1"><img src="img/aros_banner.JPG" alt=""></li>
+              <li id="slide2"><img src="img/aros_banner.JPG" alt=""></li>
+              <li id="slide3"><img src="img/aros_banner.JPG" alt=""></li>
+              <li id="slide4"><img src="img/aros_banner.JPG" alt=""></li>
+            </ul>
+                  
+           </div>  
+
+           <div class="menu-slider">
+        
+            <ul class="menu-slider-home">
+                <li><a href="#slide2"></a></li>
+                <li><a href="#slide2"></a></li>
+                <li><a href="#slide3"></a></li>
+                <li><a href="#slide4"></a></li>
+            </ul>
+    
+        </div>
+
+        </div>
+
     </section>
 
     <main>
@@ -37,12 +62,12 @@
 
           <% productosFavoritos.forEach(productosFavoritos => { %>
           
-          <article class="articulo1">
+          <article>
             <a href="/productos/detalle/<%= productosFavoritos.id %> ">
             <img src="/img/<%= productosFavoritos.image %>" alt="">
             <h4 class="descripcion"><%= productosFavoritos.name %> </h4>
             <p class="precio">$ <%= productosFavoritos.price %> </p>  
-          </a>  
+            </a>  
           </article>  
         
            <% }) %> 
