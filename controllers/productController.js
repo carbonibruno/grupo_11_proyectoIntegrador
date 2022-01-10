@@ -108,6 +108,7 @@ const productController = {
             return res.redirect("/productos")})            
         .catch(error => res.send(error))
          }
+         
         /*
         const newProduct = {
             id: productos[productos.length - 1].id + 1,
