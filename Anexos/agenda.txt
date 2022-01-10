@@ -44,3 +44,39 @@ Pendientes diseño:
 -cart
 
 
+ <section class="relacionados">
+
+            <h3 class="titulo_home">Nuestros favoritos</h3>
+             
+        <div class="articulosRelacionados">
+
+          <% productosFavoritos.forEach(productosFavoritos => { %>
+          
+          <article>
+            <a href="/productos/detalle/<%= productosFavoritos.id %> ">
+            <img src="/img/<%= productosFavoritos.image %>" alt="">
+            <h4 class="descripcion"><%= productosFavoritos.name %> </h4>
+            <p class="precio">$ <%= productosFavoritos.price %> </p>  
+            </a>  
+          </article>  
+        
+           <% }) %> 
+
+        </div>
+
+      </section>
+
+
+
+
+       <% productosFavoritos.forEach(productosFavoritos => { %>
+
+                <div class="swiper-slide">
+              <img src="/img/<%= productosFavoritos.image %>" alt="">
+              <div class="titulo-producto">
+                  <h4><%= productosFavoritos.name %></h4>
+                  <h4>$ <%= productosFavoritos.price %></h4>
+              </div>
+               </div>
+
+              <% }) %> 

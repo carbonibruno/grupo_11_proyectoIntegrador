@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/css/stylePrueba.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Index</title>
 </head>
 
@@ -58,20 +60,31 @@
 
             <h3 class="titulo_home">Nuestros favoritos</h3>
              
-        <div class="articulosRelacionados">
+        <div class="swiperContainer" >
 
-          <% productosFavoritos.forEach(productosFavoritos => { %>
+          <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+      
+      
+            <% productosFavoritos.forEach(productosFavoritos => { %>
+
+              <div class="swiper-slide">
+                <a href="/productos/detalle/<%= productosFavoritos.id %>">
+                  <img src="/img/<%= productosFavoritos.image %>" alt="">
+                  <div class="titulo-producto">
+                     <h4><%= productosFavoritos.name %></h4>
+                     <h4>$ <%= productosFavoritos.price %></h4>
+                  </div>
+                </a>  
+             </div>
+
+            <% }) %> 
+           
+           <div class="swiper-pagination"></div> 
           
-          <article>
-            <a href="/productos/detalle/<%= productosFavoritos.id %> ">
-            <img src="/img/<%= productosFavoritos.image %>" alt="">
-            <h4 class="descripcion"><%= productosFavoritos.name %> </h4>
-            <p class="precio">$ <%= productosFavoritos.price %> </p>  
-            </a>  
-          </article>  
+          </div>
+          </div> 
         
-           <% }) %> 
-
         </div>
 
       </section>
@@ -154,6 +167,36 @@
     </main>
     
     <%- include('partials/footer') %>  
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+         /*   380: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },    */
+          380: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
    
 
     

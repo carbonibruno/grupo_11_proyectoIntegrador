@@ -195,12 +195,39 @@
   "id": 25,
   "price": "5000",
   "category": "general",
-  "description": "aksf´paks"
+  "description": "aksfpaks"
  },
  {
   "id": 26,
   "price": "5000",
   "category": "general",
-  "description": "aksf´paks"
+  "description": "aksfpaks"
+ },
+ {
+    "id": 27,
+    "name": "Aros de plata",
+    "price": 10000,
+    "discount": 0,
+    "category": "favoritos",
+    "description": "Aros de plata de alta calidad. Realza tu look con estos aros finos y delicados",
+    "image": "aros_relacionados.jpg"
+ },
+ {
+    "id": 28,
+    "name": "Aros de plata",
+    "price": 10000,
+    "discount": 0,
+    "category": "favoritos",
+    "description": "Aros de plata de alta calidad. Realza tu look con estos aros finos y delicados",
+    "image": "aros_relacionados.jpg"
+ },
+ {
+    "id": 29,
+    "name": "Aros de plata",
+    "price": 10000,
+    "discount": 0,
+    "category": "favoritos",
+    "description": "Aros de plata de alta calidad. Realza tu look con estos aros finos y delicados",
+    "image": "aros_relacionados.jpg"
  }
 ]

@@ -22,6 +22,7 @@ body{
     font-size: 18px;
     color:#563440ff ;
     background-color: white;
+   
 }
 
 h3{
@@ -36,7 +37,7 @@ h3{
 a {
    text-decoration: none;  
    color: inherit;  
-   display: inline-block;
+  /*  display: inline-block; */
    
 }
 
@@ -298,10 +299,17 @@ header nav ul li{
 .relacionados{
     margin-top: 2%;
     width: 100%;
-    background-color: white;
-    padding: 5px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+    /* padding: 5px; */
 }
-
+/* 
 .articulosRelacionados{
     margin-top: 5px;
     margin: auto;
@@ -310,9 +318,9 @@ header nav ul li{
     flex-wrap: wrap;    
     justify-content: center;
     
-}
+} */
 
-article{
+/* article{
  
     text-align: center;
     width: 22%; 
@@ -326,8 +334,8 @@ article{
 
 article:hover{
     opacity: 90%;
-}
-.relacionados img{
+} */
+/* .relacionados img{
     width: 100% ;
     height: 70%;
   
@@ -335,9 +343,9 @@ article:hover{
 
 .relacionados img:hover{
     opacity: 70%;
-}
+} */
 
-.descripcion {
+/* .descripcion {
     width:100%;
     text-align: center;
     background-color:#F8E6E3 ;
@@ -350,6 +358,9 @@ article:hover{
     background-color:#F8E6E3;
  
 }
+ */
+
+/*swiper*/
 
 /*fin articulos relacionados*/
 
